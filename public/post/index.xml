@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on PaperModL</title>
+    <link>http://localhost:1313/test/post/</link>
+    <description>Recent content in Posts on PaperModL</description>
+    <image>
+      <url>http://localhost:1313/test/papermod-cover.png</url>
+      <link>http://localhost:1313/test/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 01 Jan 2018 02:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/test/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>生活</title>
+      <link>http://localhost:1313/test/post/manjarolinux%E5%AE%89%E8%A3%85%E5%90%8E%E7%9A%84%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Mon, 01 Jan 2018 02:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/test/post/manjarolinux%E5%AE%89%E8%A3%85%E5%90%8E%E7%9A%84%E9%85%8D%E7%BD%AE/</guid>
+      <description>&amp;#39; 这也是手动指定的概要内容。 这也是个多行文本
+但这个 front matter 是 TOML 格式，所以只需要使用三个引号包裹多行内容即可。 无需额外缩进。 &amp;#39;</description>
+    </item>
+    
+    <item>
+      <title>生活</title>
+      <link>http://localhost:1313/test/post/%E7%94%9F%E6%B4%BB/</link>
+      <pubDate>Mon, 01 Jan 2018 01:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/test/post/%E7%94%9F%E6%B4%BB/</guid>
+      <description>&lt;h2 id=&#34;生活中的真理&#34;&gt;生活中的真理&lt;/h2&gt;
+&lt;p&gt;曾经有一份真诚的爱情放在我面前，我没有珍惜，等我失去的时候我才后悔莫及，人世间最痛苦的事莫过于此。 
+如果上天能够给我一个再来一次的机会，我会对那个女孩子说三个字：我爱你。 
+如果非要在这份爱上加上一个期限，我希望是…… 
+一万年&lt;/p&gt;
+&lt;p&gt;如果你浪费了自己的年龄，那是挺可悲的。因为你的青春只能持续一点儿时间——很短的一点儿时间。 —— 王尔德&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 优雅的实现方式包含你可能不知道的知识点</title>
+      <link>http://localhost:1313/test/post/javascript-%E4%BC%98%E9%9B%85%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F%E5%8C%85%E5%90%AB%E4%BD%A0%E5%8F%AF%E8%83%BD%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84%E7%9F%A5%E8%AF%86%E7%82%B9-/</link>
+      <pubDate>Thu, 11 May 2017 09:17:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/test/post/javascript-%E4%BC%98%E9%9B%85%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F%E5%8C%85%E5%90%AB%E4%BD%A0%E5%8F%AF%E8%83%BD%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84%E7%9F%A5%E8%AF%86%E7%82%B9-/</guid>
+      <description>前端 标签： 干货
+JavaScript 优雅的实现方式包含你可能不知道的知识点 有些东西很好用，但是你未必知道；有些东西你可能用过，但是你未必知道原理。
+实现一个目的有多种途径，俗话说，条条大路通罗马。很多内容来自平时的一些收集以及过往博客文章底下的精彩评论，收集整理拓展一波，发散一下大家的思维以及拓展一下知识面。
+茴字有四种写法，233333&amp;hellip;， 文末有彩蛋有惊喜。
+1、简短优雅地实现 sleep 函数 很多语言都有 sleep 函数，显然 js 没有，那么如何能简短优雅地实现这个方法？
+1.1 普通版 function sleep(sleepTime) { 	for(var start = +new Dat e; +new Date - start &amp;lt;= sleepTime;) {} } var t1 = +new Date() sleep(3000) var t2 = +new Date() console.log(t2 - t1) 优点：简单粗暴，通俗易懂。 缺点：这是最简单粗暴的实现，确实 sleep 了，也确实卡死了，CPU 会飙升，无论你的服务器 CPU 有多么 Niubility。
+1.2 Promise 版本 function sleep(time) {  return new Promise(resolve =&amp;gt; setTimeout(resolve, time)) }  const t1 = +new Date() sleep(3000).</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/test/post/eclipse%E5%9B%BD%E5%86%85%E4%B8%8B%E8%BD%BD%E5%8D%87%E7%BA%A7%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/test/post/eclipse%E5%9B%BD%E5%86%85%E4%B8%8B%E8%BD%BD%E5%8D%87%E7%BA%A7%E6%96%B9%E6%B3%95/</guid>
+      <description>Eclipse国内下载升级方法 我们在国内从官网下载Eclipse以及插件非常慢，那么，有没有方法变快呢？
+有，那就是使用国内的公开镜像源替换官方源。
+1 下载Eclipse 首先，我们看一个链接地址：
+http://mirror.bit.edu.cn/eclipse/technology/epp/downloads/release/juno/SR1/eclipse-jee-juno-SR1-win32.zip
+其中， http://mirror.bit.edu.cn 代表一个国内的镜像源，后面的路径基本是固定的，所以，如果需要下载一个新的版本时，可以到：
+http://mirror.bit.edu.cn/eclipse/technology/epp/downloads/release/
+路径下去找时间戳最新的那个文件夹，然后，去下载最新的版本。
+常用的几个速度很快的源：
+中国科学技术大学(5.6MB/s) http://mirrors.ustc.edu.cn/eclipse/
+北京理工大学（600KB/s） http://mirror.bit.edu.cn/eclipse/
+大连东软信息学院(400KB/s) http://mirrors.neusoft.edu.cn/eclipse/
+2 安装插件 同样，需要把里面的源改为速度最快的源：
+ help -&amp;gt; Install New Software… -&amp;gt; Available Software Sites
+ 把 http://download.eclipse.org/ 替换为 http://mirrors.ustc.edu.cn/eclipse 。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/test/post/javascript%E4%B8%AD%E6%9C%80%E5%B8%B8%E7%94%A8%E7%9A%8455%E4%B8%AA%E7%BB%8F%E5%85%B8%E6%8A%80%E5%B7%A7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/test/post/javascript%E4%B8%AD%E6%9C%80%E5%B8%B8%E7%94%A8%E7%9A%8455%E4%B8%AA%E7%BB%8F%E5%85%B8%E6%8A%80%E5%B7%A7/</guid>
+      <description>Javascript中最常用的55个经典技巧 1. oncontextmenu=&amp;#34;window.event.returnValue=false&amp;#34; 将彻底屏蔽鼠标右键&amp;lt;table border oncontextmenu=return(false)&amp;gt;&amp;lt;td&amp;gt;no&amp;lt;/table&amp;gt; 可用于Table2. &amp;lt;body onselectstart=&amp;#34;return false&amp;#34;&amp;gt; 取消选取、防止复制3. onpaste=&amp;#34;return false&amp;#34; 不准粘贴4. oncopy=&amp;#34;return false;&amp;#34; oncut=&amp;#34;return false;&amp;#34; 防止复制5. &amp;lt;link rel=&amp;#34;Shortcut Icon&amp;#34; href=&amp;#34;favicon.ico&amp;#34;&amp;gt; IE地址栏前换成自己的图标6. &amp;lt;link rel=&amp;#34;Bookmark&amp;#34; href=&amp;#34;favicon.ico&amp;#34;&amp;gt; 可以在收藏夹中显示出你的图标7. &amp;lt;input style=&amp;#34;ime-mode:disabled&amp;#34;&amp;gt; 关闭输入法8. 永远都会带着框架&amp;lt;script language=&amp;#34;JavaScript&amp;#34;&amp;gt;&amp;lt;!--if (window == top)top.location.href = &amp;#34;frames.htm&amp;#34;; //frames.htm为框架网页// --&amp;gt;&amp;lt;/script&amp;gt;9. 防止被人frame&amp;lt;SCRIPT LANGUAGE=JAVASCRIPT&amp;gt;&amp;lt;!-- if (top.location != self.location)top.location=self.location;// --&amp;gt;&amp;lt;/SCRIPT&amp;gt;10. 网页将不能被另存为&amp;lt;noscript&amp;gt;&amp;lt;*** src=&amp;#34;/*.html&amp;gt;&amp;#34;;&amp;lt;/***&amp;gt;&amp;lt;/noscript&amp;gt;11. &amp;lt;input type=button value=&amp;#34;/查看网页源代码 onclick=&amp;#34;window.location = &amp;#34;view-source:&amp;#34;+ &amp;#34;http://www.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/test/post/java%E6%8F%8F%E8%BF%B0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/test/post/java%E6%8F%8F%E8%BF%B0/</guid>
+      <description>java问题 注意区分</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/test/post/multilines/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/test/post/multilines/</guid>
+      <description>zh-CN 多行模式，多行模式必须指定高度。
+en-US Multi lines mode.
+import { Mention } from &amp;#39;antd&amp;#39;; const { toString } = Mention;  function onChange(editorState) {  console.log(toString(editorState)); }  ReactDOM.render(  &amp;lt;Mention  style={{ width: &amp;#39;100%&amp;#39;, height: 100 }}  onChange={onChange}  suggestions={[&amp;#39;afc163&amp;#39;, &amp;#39;benjycui&amp;#39;, &amp;#39;yiminghe&amp;#39;, &amp;#39;jljsj33&amp;#39;, &amp;#39;dqaria&amp;#39;, &amp;#39;RaoHai&amp;#39;]}  multiLines  /&amp;gt; , mountNode); </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/test/post/ssh%E6%A1%86%E6%9E%B6%E6%95%B4%E5%90%88/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/test/post/ssh%E6%A1%86%E6%9E%B6%E6%95%B4%E5%90%88/</guid>
+      <description>SSH框架整合
+SSH三大框架整合 鉴于我的MyEclipse版本是最新的,你的版本可能比较低,有问题可以问我 ## 第一步建立数据库 ,这个是比较重要的,之后的hibernate逆向工程要用到 在mysql中建立一个student数据库,并创建表login_info,student_info 创建student表(当然可以创建你自己的表,自己的字段,你喜欢就好啦)
+create table student.student_info(xhao varchar(11) null,xming varchar(11) null,xbie varchar(11) null,nling int null,xyuan varchar(11) null,bji varchar(11) null,zhye varchar(11) null,dhua varchar(11) null,yxiang varchar(11) null); 第二步创建工程 打开MyEclipse创建一个web project,当然你的可能还有一个dynamic web project,这些项目可以相互转化,你喜欢就好
+ 下面是编译完成的二进制文件位置
+ &amp;gt; 默认就可以,点击finish,项目创建完成 完成后的目录
+## 第三步添加ssh三大框架的依赖 ### 添加spring的依赖 选中你的工程点击菜单栏上的project,如图所示,或者右键单击菜单的configure facets (这里低版本的可能在菜单栏的MyEclipse选项下找facets有关的选项)
+下面配置的过程就按图示来即可 下图选择spring的版本,老师用的3.0,也是你喜欢就好
+配置hibernate 选中你的工程点击菜单栏上的project,像配置sping一样,或者右键单击菜单的configure facets 然后可以在src里创建student实体类的包entity或者model(为将来的逆向工程准备)也可以同时顺便创建action,service,service,impl,dao包
+逆向工程 点击切换到databaseexplorer视图
+&amp;gt; 在这里新建一个数据库连接 点击New
+这一这里的jar包驾驶你的mysql-connetor的jar包</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/test/post/%E6%B2%9F%E9%80%9A/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/test/post/%E6%B2%9F%E9%80%9A/</guid>
+      <description>项目沟通 通过适当和及时地生成、采集、储存、处理和发布有关项目信息，确保适当的项目干系
+项目沟通管理包括为确保项目信息及时且恰当地规划、收集、生成、发布、存储、检索、管理、控制、监督和最终处置所需的各个过程。
+基本原则 准确性,完整性,及时性
+沟通在管理中的作用 　知道管理沟通的重要性后，不仅仅停止在理念层面，而应落实到执行层面，必须通过内、外部沟通机制来协助执行，以执行到位，效果更好。
+　管理沟通分外部沟通和内部沟通。
+　外部沟通一是通过公共关系手段，利用大众传媒、内部刊物等途径，与客户、政府职能部门、周边社区、金融机构等，建立良好关系，争取社会各界支持，创造好的发展氛围；二是企业导入CIS企业形象识别系统，把理念系统、行为系统、视觉系统进行有效整合，进行科学合理的传播，树立良好企业形象，提高企业的知名度、美誉度、资信度，为企业腾飞和持续发展提供好的环境。
+　内部沟通一是建立健全规范公司会议系统，使公司各种指令、计划信息能上传下达，相互协调，围绕企业各项指标的完成统筹执行。通过月会、周例会、调度会、座谈会、班前班后会等形式，快速地将信息进行有效的传递，使大家按计划有条不紊进行，步调一致，方向目标明确，提高工作效率和效能，使目标完成得到保障。二是针对公司全体员工展开“合理化建议”活动，设立合理化建议箱和[合理化建议奖。无论是技术改造、成本控制、行政管理等各领域，全面展开。从为企业发展到献计献策，树立主人翁精神，获得好的效果，从经济各个角度收获很大。三是建立公司内部刊物，每月一期，发致公司各个层面，把公司生产经营动态进行有效汇总，整合公司信息，统一全体员工思想。各车间定期办黑板报、报纸专栏，丰富职业精神生活，同时也是沟通的一种形式。五是把每周五定为公司“沟通日”。公司总经理的门是敞开着的，欢迎各级层员工进来沟通谈话。无论是意见，还是建议一并笑纳，快速做出改进，了解各级层员工的需求动态，尽可能满足他们，真正实现“以人为本”，提高员工满意度，把员工当作绩效伙伴而非“打工者”雇员，形成命运共同体，而非单纯利益共同体。六是每月集中给该月生日的员工过“生日餐会”，公司给每位生日员工发生日蛋糕、聚餐的同时，送上总经理签名的生日卡，使很多员工都很感动，感到企业大家庭的温暖，更是一心一意为公司做贡献，提升对公司的忠诚度和凝聚力。还有定期举办的联欢会、运动会、表彰会、优秀员工干部旅游活动等，使大家干得起劲、玩得开心，觉得自己与公司已密不可分，人企合一，共同成长，把公司当成自己创业、施展才能的大舞台，产生良好的效果。
+如何沟通 　(一)首先让管理者意识到沟通的重要性。
+　沟通是管理的高境界，许多企业管理问题多是由于沟通不畅引起的。良好的沟通可以使人际关系和谐，顺利完成工作任务，达成绩效目标。沟通不良则会导致生产力、品质与服务不佳，使得成本增加。
+　(二)公司内建立良性的沟通机制
+　沟通的实现有赖与良好的机制，包括正式渠道、非正式渠道。员工不会做你期望他去做的事，只会去做奖罚去做的事和考核他去做事，因此引入沟通机制很重要。应纳入制度化、轨道化，使信息更快、更顺畅，达到高效高能的目的.
+　(三)从“头”开始抓沟通
+　企业的老总、老板是个相当重要的人物。老总必须以开放的心态来做沟通，来制定沟通机制。公司文化即老板文化，他直接决定是否能建立良性机制，构建一个开放的沟通机制。老总以身作则在公司内部构建起“开放的、分享的”企业文化。
+　(四)以良好的心态与员工沟通
+　与员工沟通必须把自己放在与员工同等的位置上，“开诚布公”、“推心置腹”、“设身处地”，否则当大家位置不同就会产生心理障碍，致使沟通不成功。沟通应抱有“五心”，即尊重的心、合作的心、服务的心、赏识的心、分享的心。只有具有这“五心”，才能使沟通效果更佳，尊重员工，学会赏识员工，与员工在工作中不断地分享知识、分享经验、分享目标、分享一切值得分享的东西。
+管理其实很简单：只要与员工保持良好的沟通，让员工参与进来，自下而上，而不是自上而下，在企业内部形成运行的机制，就可实现真正的管理。只要大家目标一致，群策群力，众志成城，企业所有的目标都会实现。那样，公司赚的钱会更多，员工也将会干得更有劲、更快乐，企业将会越做越强，越做越大，为社会创造的财富也就越多。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/test/post/%E6%B5%8B%E5%BA%A6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/test/post/%E6%B5%8B%E5%BA%A6/</guid>
+      <description>在sklearn中包含四种评价尺度，分别为mean_squared_error、mean_absolute_error、explained_variance_score 和 r2_score。
+1、均方差（mean-squared-error）
+2、平均绝对值误差（mean_absolute_error）
+3、可释方差得分（explained_variance_score） explained variation measures the proportion to which a mathematical model accounts for the variation (dispersion) of a given data set
+4、中值绝对误差（Median absolute error）
+此种方法非常适应含有离群点的数据集
+5、R2 决定系数（拟合优度） 它是表征回归方程在多大程度上解释了因变量的变化，或者说方程对观测值的拟合程度如何。 因为如果单纯用残差平方和会受到你因变量和自变量绝对值大小的影响，不利于在不同模型之间进行相对比较.而用拟合优度就可以解决这个问题。例如一个模型中的因变量:10000、20000…..，而另一个模型中因变量为1、2……，这两个模型中第一个模型的残差平方和可能会很大,而另一个会很小，但是这不能说明第一个模型就别第二个模型差。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/test/post/%E7%82%B9%E8%8F%9C%E6%B5%8B%E8%AF%95-%E8%8A%B130%E7%A7%92%E7%9C%8B%E4%BD%A0%E6%98%AF%E4%B8%AA%E6%80%8E%E6%A0%B7%E7%9A%84%E4%BA%BA/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/test/post/%E7%82%B9%E8%8F%9C%E6%B5%8B%E8%AF%95-%E8%8A%B130%E7%A7%92%E7%9C%8B%E4%BD%A0%E6%98%AF%E4%B8%AA%E6%80%8E%E6%A0%B7%E7%9A%84%E4%BA%BA/</guid>
+      <description>点菜测试 | 花30秒看你是个怎样的人？ 作者：佚名|文章出处：性格心理测试|更新时间：2016-05-10
+　如果你和朋友一起吃饭。点菜的时候你会怎么做？
+　A：只点自己喜欢的，不管别人是否喜欢
+　B：先把自己的意见提出来
+　C：跟着别人，别人想吃什么就是什么
+　D：主动点菜，再询问别人的意见，再做更改
+　E：点菜时候犹豫不决，慢吞吞的
+　F：先让店员介绍菜式再点菜
+　答案分析
+　选A的你
+　你是个乐观派，生活中完全不拘小节。
+　你做事果断，但不计后果。
+　但A答案再细分为三种类型：
+　只要价钱合适迅速做出决定是合理型；
+　根据饮食喜好直接选择的人是享受型；
+　在价格，内容上不断比较才决定的人是吝啬型。
+　选B的你
+　你多是从众型的。做事小心翼翼，缺乏自己的想法。
+　你往往忽视了自我的存在，对自己没有信心。
+　要注意这一点哦。
+　选C的你
+　你性格直爽，胸襟开阔。
+　就算难以启齿的事也可以若无其事的表达出来。
+　你为人光明磊落。
+　虽然有时候说话刻薄了点，但大家其实还蛮喜欢你爽朗的一面。
+　选D的你
+　你小心谨慎，在工作和人际交往上经常犹豫。
+　你给人最直接的印象是软弱的，不堪一击的。
+　过分讲究细节上，缺乏掌握全局的意识。
+　选E的你
+　你做事一板一眼，安全第一。
+　但有时候过分谨慎，过多考虑对方立场。
+　在听取别人观点的同时，别忘了自己最真实的想法哦。
+　选F的你</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/test/post/%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91%E5%AE%9E%E7%94%A8%E7%9A%84%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E4%B8%80/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/test/post/%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91%E5%AE%9E%E7%94%A8%E7%9A%84%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E4%B8%80/</guid>
+      <description>移动开发：实用的移动开发工具（一） 切图 2017-08-21 08:41:13
+此文为大家推荐几款实用的移动开发工具，希望对大家有所帮助！
+1、Pusher（推杆的移动推送通知API。它让你可以构建跨平台的应用程序，发送程序的推送通知到iOS和Android设备。）
+2、Weex（是一个跨平台的移动用户界面框架。它是重量轻，高性能；可扩展。）
+3、CloudRail（是Android和iOS的API库，java，让你多服务只是一个API整合。这是完全免费的个人和商业项目。）
+4、Rikulo（是一个用于创建与 HTML5的跨平台Web和本地移动应用飞镖框架。）
+5、Truck（一个开源的移动应用程序框架。它提供了布局，部件，触摸手势，数据过滤，数据绑定，等等，都有干净的代码。）
+6、Tabris.js（一个移动的框架，它使简单的创建在JavaScript原生iOS和Android应用程序。）
+切图 qietu(.com)</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/test/post/%E7%AC%AC3%E8%AE%B2api%E6%8E%A5%E5%8F%A3%E8%AF%B4%E6%98%8E20181025/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/test/post/%E7%AC%AC3%E8%AE%B2api%E6%8E%A5%E5%8F%A3%E8%AF%B4%E6%98%8E20181025/</guid>
+      <description>列表到详情接口 列表 https://unidemo.dcloud.net.cn/api/news
+ 返回数据格式 post_id 新闻id 如 ： 72980 title 标题 created_at 创建时间 author_avatar 图标  详情 地址：https://unidemo.dcloud.net.cn/api/news/36kr/ + id（id为新闻id，上个页面传过来的）
+使用 rich-text 【富文本组件】来展示新闻内容</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/test/post/%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E5%A4%A7%E5%85%A8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/test/post/%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E5%A4%A7%E5%85%A8/</guid>
+      <description>1.河内之塔.. 2.Algorithm Gossip: 费式数列. 3. 巴斯卡三角形 4.Algorithm Gossip: 三色棋 5.Algorithm Gossip: 老鼠走迷官（一） 6.Algorithm Gossip: 老鼠走迷官（二） 7.Algorithm Gossip: 骑士走棋盘 8.Algorithm Gossip: 八皇后 9.Algorithm Gossip: 八枚银币. 10.Algorithm Gossip: 生命游戏. 11.Algorithm Gossip: 字串核对 12.Algorithm Gossip: 双色、三色河内塔 13.Algorithm Gossip: 背包问题（Knapsack Problem 14.Algorithm Gossip: 蒙地卡罗法求 PI 15.Algorithm Gossip: Eratosthenes 筛选求质数 16.Algorithm Gossip: 超长整数运算（大数运算）. 17.Algorithm Gossip: 长 PI. 18.Algorithm Gossip: 最大公因数、最小公倍数、因式分解 19.Algorithm Gossip: 完美数&amp;hellip; 20.Algorithm Gossip: 阿姆斯壮数. 21.Algorithm Gossip: 最大访客数&amp;hellip;. 22.Algorithm Gossip: 中序式转后序式（前序式）&amp;hellip; 23.Algorithm Gossip: 后序式的运算. 24.</description>
+    </item>
+    
+    <item>
+      <title>首页</title>
+      <link>http://localhost:1313/test/post/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/test/post/readme/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
