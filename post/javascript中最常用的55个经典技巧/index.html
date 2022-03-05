@@ -1,0 +1,818 @@
+<!doctype html><html lang=zh dir=auto>
+<head><meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<meta name=robots content="index, follow">
+<title>PaperModL</title><meta name=keywords content>
+<meta name=description content="Javascript中最常用的55个经典技巧 1. oncontextmenu=&#34;window.event.returnValue=false&#34; 将彻底屏蔽鼠标右键 <table border oncontextmenu=return(false)><td>no</table> 可用于Table 2. <body onselectstart=&#34;return false&#34;> 取消选取、防止复制 3. onpaste=&#34;return false&#34; 不准粘贴 4. oncopy=&#34;return false;&#34; oncut=&#34;return false;&#34; 防止复制 5. <link rel=&#34;Shortcut Icon&#34; href=&#34;favicon.ico&#34;> IE地址栏前换成自己的图标 6. <link rel=&#34;Bookmark&#34; href=&#34;favicon.ico&#34;> 可以在收藏夹中显示出你的图标 7. <input style=&#34;ime-mode:disabled&#34;> 关闭输入法 8. 永远都会带着框架 <script language=&#34;JavaScript&#34;><!-- if (window == top)top.location.href = &#34;frames.htm&#34;; //frames.htm为框架网页 // --></script> 9. 防止被人frame <SCRIPT LANGUAGE=JAVASCRIPT><!-- if (top.location != self.location)top.location=self.location; // --></SCRIPT> 10. 网页将不能被另存为 <noscript><*** src=&#34;/*.html>&#34;;</***></noscript> 11. <input type=button value=&#34;/查看网页源代码 onclick=&#34;window.location = &#34;view-source:&#34;+ &#34;http://www.">
+<meta name=author content="Theme PaperMod">
+<link rel=canonical href=https://yzqtpl.github.io/hugo-blog/post/javascript%E4%B8%AD%E6%9C%80%E5%B8%B8%E7%94%A8%E7%9A%8455%E4%B8%AA%E7%BB%8F%E5%85%B8%E6%8A%80%E5%B7%A7/>
+<link crossorigin=anonymous href=/hugo-blog/assets/css/stylesheet.min.c88963fe2d79462000fd0fb1b3737783c32855d340583e4523343f8735c787f0.css integrity="sha256-yIlj/i15RiAA/Q+xs3N3g8MoVdNAWD5FIzQ/hzXHh/A=" rel="preload stylesheet" as=style>
+<script defer crossorigin=anonymous src=/hugo-blog/assets/js/highlight.min.4dcb3c4f38462f66c6b6137227726f5543cb934cca9788f041c087e374491df2.js integrity="sha256-Tcs8TzhGL2bGthNyJ3JvVUPLk0zKl4jwQcCH43RJHfI=" onload=hljs.initHighlightingOnLoad()></script>
+<link rel=icon href=https://yzqtpl.github.io/hugo-blog/favicon.ico>
+<link rel=icon type=image/png sizes=16x16 href=https://yzqtpl.github.io/hugo-blog/favicon-16x16.png>
+<link rel=icon type=image/png sizes=32x32 href=https://yzqtpl.github.io/hugo-blog/favicon-32x32.png>
+<link rel=apple-touch-icon href=https://yzqtpl.github.io/hugo-blog/apple-touch-icon.png>
+<link rel=mask-icon href=https://yzqtpl.github.io/hugo-blog/safari-pinned-tab.svg>
+<meta name=theme-color content="#2e2e33">
+<meta name=msapplication-TileColor content="#2e2e33">
+<link rel=alternate hreflang=zh href=https://yzqtpl.github.io/hugo-blog/post/javascript%E4%B8%AD%E6%9C%80%E5%B8%B8%E7%94%A8%E7%9A%8455%E4%B8%AA%E7%BB%8F%E5%85%B8%E6%8A%80%E5%B7%A7/>
+<noscript>
+<style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><meta property="og:title" content>
+<meta property="og:description" content="Javascript中最常用的55个经典技巧 1. oncontextmenu=&#34;window.event.returnValue=false&#34; 将彻底屏蔽鼠标右键 <table border oncontextmenu=return(false)><td>no</table> 可用于Table 2. <body onselectstart=&#34;return false&#34;> 取消选取、防止复制 3. onpaste=&#34;return false&#34; 不准粘贴 4. oncopy=&#34;return false;&#34; oncut=&#34;return false;&#34; 防止复制 5. <link rel=&#34;Shortcut Icon&#34; href=&#34;favicon.ico&#34;> IE地址栏前换成自己的图标 6. <link rel=&#34;Bookmark&#34; href=&#34;favicon.ico&#34;> 可以在收藏夹中显示出你的图标 7. <input style=&#34;ime-mode:disabled&#34;> 关闭输入法 8. 永远都会带着框架 <script language=&#34;JavaScript&#34;><!-- if (window == top)top.location.href = &#34;frames.htm&#34;; //frames.htm为框架网页 // --></script> 9. 防止被人frame <SCRIPT LANGUAGE=JAVASCRIPT><!-- if (top.location != self.location)top.location=self.location; // --></SCRIPT> 10. 网页将不能被另存为 <noscript><*** src=&#34;/*.html>&#34;;</***></noscript> 11. <input type=button value=&#34;/查看网页源代码 onclick=&#34;window.location = &#34;view-source:&#34;+ &#34;http://www.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://yzqtpl.github.io/hugo-blog/post/javascript%E4%B8%AD%E6%9C%80%E5%B8%B8%E7%94%A8%E7%9A%8455%E4%B8%AA%E7%BB%8F%E5%85%B8%E6%8A%80%E5%B7%A7/"><meta property="og:image" content="https://yzqtpl.github.io/hugo-blog/papermod-cover.png"><meta property="article:section" content="post">
+<meta property="og:site_name" content="PaperModL">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="https://yzqtpl.github.io/hugo-blog/papermod-cover.png">
+<meta name=twitter:title content>
+<meta name=twitter:description content="Javascript中最常用的55个经典技巧 1. oncontextmenu=&#34;window.event.returnValue=false&#34; 将彻底屏蔽鼠标右键 <table border oncontextmenu=return(false)><td>no</table> 可用于Table 2. <body onselectstart=&#34;return false&#34;> 取消选取、防止复制 3. onpaste=&#34;return false&#34; 不准粘贴 4. oncopy=&#34;return false;&#34; oncut=&#34;return false;&#34; 防止复制 5. <link rel=&#34;Shortcut Icon&#34; href=&#34;favicon.ico&#34;> IE地址栏前换成自己的图标 6. <link rel=&#34;Bookmark&#34; href=&#34;favicon.ico&#34;> 可以在收藏夹中显示出你的图标 7. <input style=&#34;ime-mode:disabled&#34;> 关闭输入法 8. 永远都会带着框架 <script language=&#34;JavaScript&#34;><!-- if (window == top)top.location.href = &#34;frames.htm&#34;; //frames.htm为框架网页 // --></script> 9. 防止被人frame <SCRIPT LANGUAGE=JAVASCRIPT><!-- if (top.location != self.location)top.location=self.location; // --></SCRIPT> 10. 网页将不能被另存为 <noscript><*** src=&#34;/*.html>&#34;;</***></noscript> 11. <input type=button value=&#34;/查看网页源代码 onclick=&#34;window.location = &#34;view-source:&#34;+ &#34;http://www.">
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":2,"name":"Posts","item":"https://yzqtpl.github.io/hugo-blog/post/"},{"@type":"ListItem","position":3,"name":"","item":"https://yzqtpl.github.io/hugo-blog/post/javascript%E4%B8%AD%E6%9C%80%E5%B8%B8%E7%94%A8%E7%9A%8455%E4%B8%AA%E7%BB%8F%E5%85%B8%E6%8A%80%E5%B7%A7/"}]}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"","name":"","description":"Javascript中最常用的55个经典技巧 1. oncontextmenu=\u0026#34;window.event.returnValue=false\u0026#34; 将彻底屏蔽鼠标右键 \u0026lt;table border oncontextmenu=return(false)\u0026gt;\u0026lt;td\u0026gt;no\u0026lt;/table\u0026gt; 可用于Table 2. \u0026lt;body onselectstart=\u0026#34;return false\u0026#34;\u0026gt; 取消选取、防止复制 3. onpaste=\u0026#34;return false\u0026#34; 不准粘贴 4. oncopy=\u0026#34;return false;\u0026#34; oncut=\u0026#34;return false;\u0026#34; 防止复制 5. \u0026lt;link rel=\u0026#34;Shortcut Icon\u0026#34; href=\u0026#34;favicon.ico\u0026#34;\u0026gt; IE地址栏前换成自己的图标 6. \u0026lt;link rel=\u0026#34;Bookmark\u0026#34; href=\u0026#34;favicon.ico\u0026#34;\u0026gt; 可以在收藏夹中显示出你的图标 7. \u0026lt;input style=\u0026#34;ime-mode:disabled\u0026#34;\u0026gt; 关闭输入法 8. 永远都会带着框架 \u0026lt;script language=\u0026#34;JavaScript\u0026#34;\u0026gt;\u0026lt;!-- if (window == top)top.location.href = \u0026#34;frames.htm\u0026#34;; //frames.htm为框架网页 // --\u0026gt;\u0026lt;/script\u0026gt; 9. 防止被人frame \u0026lt;SCRIPT LANGUAGE=JAVASCRIPT\u0026gt;\u0026lt;!-- if (top.location != self.location)top.location=self.location; // --\u0026gt;\u0026lt;/SCRIPT\u0026gt; 10. 网页将不能被另存为 \u0026lt;noscript\u0026gt;\u0026lt;*** src=\u0026#34;/*.html\u0026gt;\u0026#34;;\u0026lt;/***\u0026gt;\u0026lt;/noscript\u0026gt; 11. \u0026lt;input type=button value=\u0026#34;/查看网页源代码 onclick=\u0026#34;window.location = \u0026#34;view-source:\u0026#34;+ \u0026#34;http://www.","keywords":[],"articleBody":"Javascript中最常用的55个经典技巧 1. oncontextmenu=\"window.event.returnValue=false\" 将彻底屏蔽鼠标右键 no 可用于Table 2. 取消选取、防止复制 3. onpaste=\"return false\" 不准粘贴 4. oncopy=\"return false;\" oncut=\"return false;\" 防止复制 5. IE地址栏前换成自己的图标 6. 可以在收藏夹中显示出你的图标 7. 关闭输入法 8. 永远都会带着框架  9. 防止被人frame  10. 网页将不能被另存为 \"; 11. 12.删除时确认 删除 13. 取得控件的绝对位置 //Javascript function getIE(e){ var t=e.offsetTop; var l=e.offsetLeft; while(e=e.offsetParent){ t+=e.offsetTop; l+=e.offsetLeft; } alert(\"top=\"+t+\"/nleft=\"+l); }  //VBScript \"BODY\" set a = a.offsetParent t=t+a.offsetTop l=l+a.offsetLeft wend msgbox \"top=\"\u0026t\u0026chr(13)\u0026\"left=\"\u0026l,64,\"得到控件的位置\" end function -- 14. 光标是停在文本框文字的最后 function cc() { var e = event.srcElement; var r =e.createTextRange(); r.moveStart(\"character\",e.value.length); r.collapse(true); r.select(); }  15. 判断上一页的来源 javascript : document.referrer 16. 最小化、最大化、关闭窗口    本例适用于IE 17.屏蔽功能键Shift,Alt,Ctrl  function look(){ if(event.shiftKey) alert(\"禁止按Shift键!\"); //可以换成ALT　CTRL } document.onkeydown=look;  18. 网页不会被缓存 或者19.怎样让表单没有凹凸感？ 或  20.\u0026的区别？ (division)用来定义大段的页面元素，会产生转行 用来定义同一行内的元素，跟的唯一区别是不产生转行 是ns的标记，ie不支持，相当于 21.让弹出窗口总是在最上面: 22.不要滚动条? 让竖条没有:  让横条没有:  两个都去掉？更简单了  23.怎样去掉图片链接点击后，图片周围的虚线？  24.电子邮件处理提交表单  25.在打开的子窗口刷新父窗口的代码里如何写？ window.opener.location.reload() 26.如何设定打开页面的大小 打开页面的位置27.在页面中如何加入不是满铺的背景图片,拉动页面时背景图不动  body {background-image:url(/logo.gif); background-repeat:no-repeat; background-position:center;background-attachment: fixed}  28. 检查一段字符串是否全由数字组成  29. 获得一个窗口的大小 document.body.clientWidth; document.body.clientHeight 30. 怎么判断是否是字符 if (/[^/x00-/xff]/g.test(s)) alert(\"含有汉字\"); else alert(\"全是字符\"); 31.TEXTAREA自适应文字行数的多少  32. 日期减去天数等于第二个日期 function cc(dd,dadd) { //可以加上错误处理 var a = new Date(dd) a = a.valueOf() a = a - dadd * 24 * 60 * 60 * 1000 a = new Date(a) alert(a.getFullYear() + \"年\" + (a.getMonth() + 1) + \"月\" + a.getDate() + \"日\") } cc(\"12/23/2002\",2)  33. 选择了哪一个Radio function checkme() for each ob in radio1 if ob.checked then window.alert ob.value next end function  Style Barcode  34.脚本永不出错  35.ENTER键可以让光标移到下一个输入框 36. 检测某个网站的链接速度： 把如下代码加入区域中: tim=1 setInterval(\"tim++\",100) b=1 var autourl=new Array() autourl[1]=1000){this.resized=true;this.style.width=1000;}\" align=absMiddle border=0www.njcatv.net\" autourl[2]=\"javacool.3322.net\" autourl[3]=1000){this.resized=true;this.style.width=1000;}\" align=absMiddle border=0www.sina.com.cn\" autourl[4]=\"www.nuaa.edu.cn\" autourl[5]=1000){this.resized=true;this.style.width=1000;}\" align=absMiddle border=0www.cctv.com\" function butt(){ ***(\"\") for(var i=1;i=》=》\") ***(\"\") } butt() function auto(url){ document.forms[0][\"url\"+b].value=url if(tim200) {document.forms[0][\"txt\"+b].value=\"/链接超时\"} else {document.forms[0][\"txt\"+b].value=\"/blog/时间\"+tim/10+\"秒\"} b++ } function run(){for(var i=1;i\")} run() 37. 各种样式的光标 auto ：标准光标 default ：标准箭头 hand ：手形光标 wait ：等待光标 text ：I形光标 vertical-text ：水平I形光标 no-drop ：不可拖动光标 not-allowed ：无效光标 help ：?帮助光标 all-scroll ：三角方向标 move ：移动标 crosshair ：十字标 e-resize n-resize nw-resize w-resize s-resize se-resize sw-resize 38.页面进入和退出的特效 进入页面推出页面这个是页面被载入和调出时的一些特效。duration表示特效的持续时间，以秒为单位。transition表示使用哪种特效，取值为1-23: 0 矩形缩小 1 矩形扩大 2 圆形缩小 3 圆形扩大 4 下到上刷新 5 上到下刷新 6 左到右刷新 7 右到左刷新 8 竖百叶窗 9 横百叶窗 10 错位横百叶窗 11 错位竖百叶窗 12 点扩散 13 左右到中间刷新 14 中间到左右刷新 15 中间到上下 16 上下到中间 17 右下到左上 18 右上到左下 19 左上到右下 20 左下到右上 21 横条 22 竖条 23 以上22种随机选择一种 39.在规定时间内跳转 40.网页是否被检索 其中属性值有以下一些: 属性值为\"all\": 文件将被检索，且页上链接可被查询； 属性值为\"none\": 文件不被检索，而且不查询页上的链接； 属性值为\"index\": 文件将被检索； 属性值为\"follow\": 查询页上的链接； 属性值为\"noindex\": 文件不检索，但可被查询链接； 属性值为\"nofollow\": 文件不被检索，但可查询页上的链接。 41、email地址的分割 把如下代码加入区域中 webmaster@sina.com 42、流动边框效果的表格 把如下代码加入区域中  l=Array(6,7,8,9,'a','b','b','c','d','e','f') Nx=5;Ny=35 t=\"\" for(x=Nx;x\" t+=\"\" for(x=2;x\" t+=\"\" for(x=Ny;x0;x--) t+=\"\" ***(t+\"\") var N=Nx*2+Ny*2 function f1(y){ for(i=0;i10)c=20-c document.all[\"a_mo\"+(i)].bgColor=\"\"\"\"#0000\"+l[c]+l[c]+\"'\"} y++ setTimeout('f1('+y+')','1')} f1(1)  43、JavaScript主页弹出窗口技巧 窗口中间弹出  window.open(\"http://www.cctv.com\",\"\",\"width=400,height=240,top=\"+(screen.availHeight-240)/2+\",left=\"+(screen.availWidth-400)/2);  ============   function WinOpen() { msg=open(\"\",\"DisplayWindow\",\"toolbar=no,directories=no,menubar=no\"); msg.***(\"哈 罗!\"); msg.***(\"酷 毙 了!这 是JavaScript所 开 的 视 窗!\"); }        ============== 一、在下面的代码中，你只要单击打开一个窗口，即可链接到赛迪网。而当你想关闭时，只要单击一下即可关闭刚才打开的窗口。 代码如下： http://www.ccidnet.com'，'NewWindow'); } function closeclk() { another.close(); } //--     二、上面的代码也太静了，为何不来点动感呢？如果能给页面来个降落效果那该多好啊！ 代码如下：  function drop(n) { if(self.moveBy){ self.moveBy (0，-900); for(i = n; i  0; i--){ self.moveBy(0，3); } for(j = 8; j  0; j--){ self.moveBy(0，j); self.moveBy(j，0); self.moveBy(0，-j); self.moveBy(-j，0); } } }  三、讨厌很多网站总是按照默认窗口打开，如果你能随心所欲控制打开的窗口那该多好。 代码如下:      打开页面的参数\n离开左边的距离: pixels 离开右边的距离: pixels 窗口的宽度: pixels 窗口的高度: pixels       你只要在相对应的对话框中输入一个数值即可，将要打开的页面的窗口控制得很好。 44、页面的打开移动 把如下代码加入区域中 0; t--) { for (x = 20; x  0; x--) { for (y = 10; y  0; y--) { parent.moveBy(0,-x); } } for (x = 20; x  0; x--) { for (y = 10; y  0; y--) { parent.moveBy(0,x); } } for (x = 20; x  0; x--) { for (y = 10; y  0; y--) { parent.moveBy(x,0); } } for (x = 20; x  0; x--) { for (y = 10; y  0; y--) { parent.moveBy(-x,0); } } } //-- // End --  45、显示个人客户端机器的日期和时间  46、自动的为你每次产生最後修改的日期了：   This is a simple HTML- page. Last changes:    47、不能为空和邮件地址的约束：      Enter your name:\n Enter your e-mail address:\n 48、跑马灯     这里可显示您的网页 !   49、在网页中用按钮来控制前页，后页和主页的显示。      50、查看某网址的源代码 把如下代码加入区域中  function add() { var ress=document.forms[0].luxiaoqing.value window.location=\"view-source:\"+ress; }  输入要查看源代码的URL地址:  \n 51、title显示日期 把如下代码加入区域中:  52、显示所有链接 把如下代码加入区域中 一共有\"+total+\"个连接\n\") for (i=0;i\"+links[i].outerHTML+\"\n\") } } //--  53、回车键换行 把如下代码加入区域中 function handleEnter (field, event) { var keyCode = event.keyCode ? event.keyCode : event.which ? event.which : event.charCode; if (keyCode == 13) { var i; for (i = 0; i  回车换行 54、确认后提交 把如下代码加入区域中     55、改变表格的内容 把如下代码加入区域中 var arr=new Array() arr[0]=\"一一一一一\"; arr[1]=\"二二二二二\"; arr[2]=\"三三三三三\";  改变第一格 改变第二格 改变第三格  第一格 第二格 第三格   ","wordCount":"1429","inLanguage":"zh","datePublished":"0001-01-01T00:00:00Z","dateModified":"0001-01-01T00:00:00Z","author":{"@type":"Person","name":"Theme PaperMod"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://yzqtpl.github.io/hugo-blog/post/javascript%E4%B8%AD%E6%9C%80%E5%B8%B8%E7%94%A8%E7%9A%8455%E4%B8%AA%E7%BB%8F%E5%85%B8%E6%8A%80%E5%B7%A7/"},"publisher":{"@type":"Organization","name":"PaperModL","logo":{"@type":"ImageObject","url":"https://yzqtpl.github.io/hugo-blog/favicon.ico"}}}</script>
+</head><body id=top>
+<script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script>
+<header class=header>
+<nav class=nav>
+<div class=logo>
+<a href=https://yzqtpl.github.io/hugo-blog accesskey=h title="PaperModL (Alt + H)">PaperModL</a>
+<span class=logo-switches>
+<button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+</button>
+<ul class=lang-switch><li>|</li><li>
+<a href=https://yzqtpl.github.io/hugo-blog/en/ title=English aria-label=English>English</a>
+</li></ul></span>
+</div><ul id=menu>
+<li>
+<a href=https://yzqtpl.github.io/hugo-blog/archives/ title=Archive>
+<span>Archive</span>
+</a>
+</li><li>
+<a href=https://yzqtpl.github.io/hugo-blog/categories title=Categories>
+<span>Categories</span>
+</a>
+</li><li>
+<a href=https://yzqtpl.github.io/hugo-blog/series title=Series>
+<span>Series</span>
+</a>
+</li><li>
+<a href=https://yzqtpl.github.io/hugo-blog/tags title=Tags>
+<span>Tags</span>
+</a>
+</li></ul></nav></header><main class=main>
+<article class=post-single>
+<header class=post-header>
+<div class=breadcrumbs><a href=https://yzqtpl.github.io/hugo-blog>主页</a>&nbsp;»&nbsp;<a href=https://yzqtpl.github.io/hugo-blog/post/>Posts</a></div><h1 class=post-title>
+</h1><div class=post-meta>7 分钟&nbsp;·&nbsp;Theme PaperMod&nbsp;|&nbsp;<a href=https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/content/post/Javascript%e4%b8%ad%e6%9c%80%e5%b8%b8%e7%94%a8%e7%9a%8455%e4%b8%aa%e7%bb%8f%e5%85%b8%e6%8a%80%e5%b7%a7.md rel="noopener noreferrer" target=_blank>Suggest Changes</a>
+</div></header><div class=toc>
+<details>
+<summary accesskey=c title="(Alt + C)">
+<span class=details>目录</span>
+</summary>
+<div class=inner><ul>
+<li>
+<a href=#javascript%e4%b8%ad%e6%9c%80%e5%b8%b8%e7%94%a8%e7%9a%8455%e4%b8%aa%e7%bb%8f%e5%85%b8%e6%8a%80%e5%b7%a7 aria-label=Javascript中最常用的55个经典技巧>Javascript中最常用的55个经典技巧</a>
+</li></ul></div></details>
+</div><div class=post-content><h1 id=javascript中最常用的55个经典技巧>Javascript中最常用的55个经典技巧<a hidden class=anchor aria-hidden=true href=#javascript中最常用的55个经典技巧>#</a></h1><pre tabindex=0><code>1. oncontextmenu=&#34;window.event.returnValue=false&#34; 将彻底屏蔽鼠标右键
+&lt;table border oncontextmenu=return(false)&gt;&lt;td&gt;no&lt;/table&gt; 可用于Table
+
+2. &lt;body onselectstart=&#34;return false&#34;&gt; 取消选取、防止复制
+
+3. onpaste=&#34;return false&#34; 不准粘贴
+
+4. oncopy=&#34;return false;&#34; oncut=&#34;return false;&#34; 防止复制
+
+5. &lt;link rel=&#34;Shortcut Icon&#34; href=&#34;favicon.ico&#34;&gt; IE地址栏前换成自己的图标
+
+6. &lt;link rel=&#34;Bookmark&#34; href=&#34;favicon.ico&#34;&gt; 可以在收藏夹中显示出你的图标
+
+
+7. &lt;input style=&#34;ime-mode:disabled&#34;&gt; 关闭输入法
+
+
+8. 永远都会带着框架
+&lt;script language=&#34;JavaScript&#34;&gt;&lt;!--
+if (window == top)top.location.href = &#34;frames.htm&#34;; //frames.htm为框架网页
+// --&gt;&lt;/script&gt;
+
+
+9. 防止被人frame
+&lt;SCRIPT LANGUAGE=JAVASCRIPT&gt;&lt;!-- 
+if (top.location != self.location)top.location=self.location;
+// --&gt;&lt;/SCRIPT&gt;
+
+
+10. 网页将不能被另存为
+&lt;noscript&gt;&lt;*** src=&#34;/*.html&gt;&#34;;&lt;/***&gt;&lt;/noscript&gt;
+
+
+11. &lt;input type=button value=&#34;/查看网页源代码 
+onclick=&#34;window.location = &#34;view-source:&#34;+ &#34;http://www.pconline.com.cn&#34;&#34;&gt;
+12.删除时确认
+&lt;a href=&#34;&#34;javascript :if(confirm(&#34;确实要删除吗?&#34;))location=&#34;boos.asp?&amp;areyou=删除&amp;page=1&#34;&#34;&gt;删除&lt;/a&gt;
+
+
+13. 取得控件的绝对位置
+//Javascript
+&lt;script language=&#34;Javascript&#34;&gt;
+function getIE(e){
+var t=e.offsetTop;
+var l=e.offsetLeft;
+while(e=e.offsetParent){
+t+=e.offsetTop;
+l+=e.offsetLeft;
+}
+alert(&#34;top=&#34;+t+&#34;/nleft=&#34;+l);
+}
+&lt;/script&gt;
+//VBScript
+&lt;script language=&#34;VBScript&#34;&gt;&lt;!--
+function getIE()
+dim t,l,a,b
+set a=document.all.img1
+t=document.all.img1.offsetTop
+l=document.all.img1.offsetLeft
+while a.tagName&lt;&gt;&#34;BODY&#34;
+set a = a.offsetParent
+t=t+a.offsetTop
+l=l+a.offsetLeft
+wend
+msgbox &#34;top=&#34;&amp;t&amp;chr(13)&amp;&#34;left=&#34;&amp;l,64,&#34;得到控件的位置&#34;
+end function
+--&gt;&lt;/script&gt;
+
+
+14. 光标是停在文本框文字的最后
+&lt;script language=&#34;javascript&#34;&gt;
+function cc()
+{
+var e = event.srcElement;
+var r =e.createTextRange();
+r.moveStart(&#34;character&#34;,e.value.length);
+r.collapse(true);
+r.select();
+}
+&lt;/script&gt;
+&lt;input type=text name=text1 value=&#34;123&#34; onfocus=&#34;cc()&#34;&gt;
+
+
+15. 判断上一页的来源
+javascript :
+document.referrer
+
+
+16. 最小化、最大化、关闭窗口
+&lt;object id=hh1 classid=&#34;clsid:ADB880A6-D8FF-11CF-9377-00AA003B7A11&#34;&gt; 
+&lt;param name=&#34;Command&#34; value=&#34;Minimize&#34;&gt;&lt;/object&gt;
+&lt;object id=hh2 classid=&#34;clsid:ADB880A6-D8FF-11CF-9377-00AA003B7A11&#34;&gt; 
+&lt;param name=&#34;Command&#34; value=&#34;Maximize&#34;&gt;&lt;/object&gt;
+&lt;OBJECT id=hh3 classid=&#34;clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11&#34;&gt;
+&lt;PARAM NAME=&#34;Command&#34; value=&#34;/Close&#34;&gt;&lt;/OBJECT&gt;
+&lt;input type=button value=&#34;/最小化 onclick=hh1.Click()&gt;
+&lt;input type=button value=&#34;/blog/最大化 onclick=hh2.Click()&gt;
+&lt;input type=button value=关闭 onclick=hh3.Click()&gt;
+本例适用于IE
+
+
+17.屏蔽功能键Shift,Alt,Ctrl
+&lt;script&gt;
+function look(){ 
+if(event.shiftKey) 
+alert(&#34;禁止按Shift键!&#34;); //可以换成ALT　CTRL
+} 
+document.onkeydown=look; 
+&lt;/script&gt;
+
+
+18. 网页不会被缓存
+&lt;META HTTP-EQUIV=&#34;pragma&#34; CONTENT=&#34;no-cache&#34;&gt;
+&lt;META HTTP-EQUIV=&#34;Cache-Control&#34; CONTENT=&#34;no-cache, must-revalidate&#34;&gt;
+&lt;META HTTP-EQUIV=&#34;expires&#34; CONTENT=&#34;Wed, 26 Feb 1997 08:21:57 GMT&#34;&gt;
+或者&lt;META HTTP-EQUIV=&#34;expires&#34; CONTENT=&#34;0&#34;&gt;
+
+
+19.怎样让表单没有凹凸感？
+&lt;input type=text style=&#34;&#34;&#34;border:1 solid #000000&#34;&gt; 
+或
+&lt;input type=text style=&#34;border-left:none; border-right:none; border-top:none; border-bottom: 
+1 solid #000000&#34;&gt;&lt;/textarea&gt;
+
+
+20.&lt;div&gt;&lt;span&gt;&amp;&lt;layer&gt;的区别？ 
+&lt;div&gt;(division)用来定义大段的页面元素，会产生转行 
+&lt;span&gt;用来定义同一行内的元素，跟&lt;div&gt;的唯一区别是不产生转行 
+&lt;layer&gt;是ns的标记，ie不支持，相当于&lt;div&gt;
+
+
+21.让弹出窗口总是在最上面:
+&lt;body onblur=&#34;this.focus();&#34;&gt;
+
+
+22.不要滚动条? 
+让竖条没有: 
+&lt;body style=&#34;overflow:scroll;overflow-y:hidden&#34;&gt; 
+&lt;/body&gt; 
+让横条没有: 
+&lt;body style=&#34;overflow:scroll;overflow-x:hidden&#34;&gt; 
+&lt;/body&gt; 
+两个都去掉？更简单了 
+&lt;body scroll=&#34;no&#34;&gt; 
+&lt;/body&gt;
+
+
+23.怎样去掉图片链接点击后，图片周围的虚线？
+&lt;a href=&#34;#&#34; onFocus=&#34;this.blur()&#34;&gt;&lt;img src=&#34;/logo.jpg&#34; border=0&gt;&lt;/a&gt;
+
+
+24.电子邮件处理提交表单
+&lt;form name=&#34;form1&#34; method=&#34;post&#34; action=mailto:****@***.com 
+enctype=&#34;text/plain&#34;&gt; 
+&lt;input type=submit&gt;
+&lt;/form&gt;
+
+
+25.在打开的子窗口刷新父窗口的代码里如何写？
+window.opener.location.reload()
+
+
+26.如何设定打开页面的大小
+&lt;body onload=&#34;top.resizeTo(300,200);&#34;&gt;
+打开页面的位置&lt;body onload=&#34;top.moveBy(300,200);&#34;&gt;
+
+
+27.在页面中如何加入不是满铺的背景图片,拉动页面时背景图不动 
+&lt;STYLE&gt; 
+body 
+{background-image:url(/logo.gif); background-repeat:no-repeat; 
+background-position:center;background-attachment: fixed} 
+&lt;/STYLE&gt;
+
+
+28. 检查一段字符串是否全由数字组成
+&lt;script language=&#34;Javascript&#34;&gt;&lt;!--
+function checkNum(str){return str.match(//D/)==null}
+alert(checkNum(&#34;1232142141&#34;))
+alert(checkNum(&#34;123214214a1&#34;))
+// --&gt;&lt;/script&gt;
+
+
+29. 获得一个窗口的大小
+document.body.clientWidth; document.body.clientHeight
+
+
+30. 怎么判断是否是字符
+if (/[^/x00-/xff]/g.test(s)) alert(&#34;含有汉字&#34;);
+else alert(&#34;全是字符&#34;);
+
+
+31.TEXTAREA自适应文字行数的多少
+&lt;textarea rows=1 name=s1 cols=27 onpropertychange
+=&#34;this.style.posHeight=this.scrollHeight&#34;&gt;
+&lt;/textarea&gt;
+
+
+32. 日期减去天数等于第二个日期
+&lt;script language=Javascript&gt;
+function cc(dd,dadd)
+{
+//可以加上错误处理
+var a = new Date(dd)
+a = a.valueOf()
+a = a - dadd * 24 * 60 * 60 * 1000
+a = new Date(a)
+alert(a.getFullYear() + &#34;年&#34; + (a.getMonth() + 1) + &#34;月&#34; + a.getDate() + &#34;日&#34;)
+}
+cc(&#34;12/23/2002&#34;,2)
+&lt;/script&gt;
+
+
+33. 选择了哪一个Radio
+&lt;HTML&gt;&lt;script language=&#34;vbscript&#34;&gt;
+function checkme()
+for each ob in radio1
+if ob.checked then 
+window.alert ob.value
+next
+end function
+&lt;/script&gt;&lt;BODY&gt;
+&lt;INPUT name=&#34;radio1&#34; type=&#34;radio&#34; value=&#34;/style&#34; checked&gt;Style
+&lt;INPUT name=&#34;radio1&#34; type=&#34;radio&#34; value=&#34;/blog/barcode&#34;&gt;Barcode
+&lt;INPUT type=&#34;button&#34; value=&#34;check&#34; onclick=&#34;checkme()&#34;&gt;
+&lt;/BODY&gt;&lt;/HTML&gt;
+
+
+34.脚本永不出错
+&lt;SCRIPT LANGUAGE=&#34;JavaScript&#34;&gt; 
+&lt;!-- Hide 
+function killErrors() { 
+return true; 
+} 
+window.onerror = killErrors; 
+// --&gt; 
+&lt;/SCRIPT&gt;
+
+
+35.ENTER键可以让光标移到下一个输入框
+&lt;input onkeydown=&#34;if(event.keyCode==13)event.keyCode=9&#34;&gt;
+
+
+36. 检测某个网站的链接速度：
+把如下代码加入&lt;body&gt;区域中:
+&lt;script language=Javascript&gt;
+tim=1
+setInterval(&#34;tim++&#34;,100)
+b=1
+var autourl=new Array()
+autourl[1]=1000){this.resized=true;this.style.width=1000;}&#34; align=absMiddle border=0&gt;www.njcatv.net&#34;
+autourl[2]=&#34;javacool.3322.net&#34;
+autourl[3]=1000){this.resized=true;this.style.width=1000;}&#34; align=absMiddle border=0&gt;www.sina.com.cn&#34;
+autourl[4]=&#34;www.nuaa.edu.cn&#34;
+autourl[5]=1000){this.resized=true;this.style.width=1000;}&#34; align=absMiddle border=0&gt;www.cctv.com&#34;
+function butt(){
+***(&#34;&lt;form name=autof&gt;&#34;)
+for(var i=1;i&lt;autourl.length;i++)
+***(&#34;&lt;input type=text name=txt&#34;+i+&#34; size=10 value=&#34;/测试中……&gt; =》&lt;input type=text 
+name=url&#34;+i+&#34; size=40&gt; =》&lt;input type=button value=&#34;/blog/GO 
+onclick=window.open(this.form.url&#34;+i+&#34;.value)&gt;&lt;br&gt;&#34;)
+***(&#34;&lt;input type=submit value=刷新&gt;&lt;/form&gt;&#34;)
+}
+butt()
+function auto(url){
+document.forms[0][&#34;url&#34;+b].value=url
+if(tim&gt;200)
+{document.forms[0][&#34;txt&#34;+b].value=&#34;/链接超时&#34;}
+else
+{document.forms[0][&#34;txt&#34;+b].value=&#34;/blog/时间&#34;+tim/10+&#34;秒&#34;}
+b++
+}
+function run(){for(var i=1;i&lt;autourl.length;i++)***(&#34;&lt;img src=http://&#34;+autourl+&#34;/&#34;+Math.random()+&#34; width=1 height=1 
+onerror=auto(&#34;http://&#34;+autourl+&#34;&#34;)&gt;&#34;)}
+run()&lt;/script&gt;
+
+
+37. 各种样式的光标
+auto ：标准光标
+default ：标准箭头
+hand ：手形光标
+wait ：等待光标
+text ：I形光标
+vertical-text ：水平I形光标
+no-drop ：不可拖动光标
+not-allowed ：无效光标
+help ：?帮助光标
+all-scroll ：三角方向标
+move ：移动标
+crosshair ：十字标
+e-resize
+n-resize
+nw-resize
+w-resize
+s-resize
+se-resize
+sw-resize
+
+
+38.页面进入和退出的特效
+进入页面&lt;meta http-equiv=&#34;Page-Enter&#34; content=&#34;revealTrans(duration=x, transition=y)&#34;&gt;
+推出页面&lt;meta http-equiv=&#34;Page-Exit&#34; content=&#34;revealTrans(duration=x, transition=y)&#34;&gt;  
+这个是页面被载入和调出时的一些特效。duration表示特效的持续时间，以秒为单位。transition表示使用哪种特效，取值为1-23:
+　　0 矩形缩小 
+　　1 矩形扩大 
+　　2 圆形缩小
+　　3 圆形扩大 
+　　4 下到上刷新 
+　　5 上到下刷新
+　　6 左到右刷新 
+　　7 右到左刷新 
+　　8 竖百叶窗
+　　9 横百叶窗 
+　　10 错位横百叶窗 
+　　11 错位竖百叶窗
+　　12 点扩散 
+　　13 左右到中间刷新 
+　　14 中间到左右刷新
+　　15 中间到上下
+　　16 上下到中间 
+　　17 右下到左上
+　　18 右上到左下 
+　　19 左上到右下 
+　　20 左下到右上
+　　21 横条 
+　　22 竖条 
+　　23 以上22种随机选择一种
+
+
+39.在规定时间内跳转
+&lt;META http-equiv=V=&#34;REFRESH&#34; content=&#34;5;URL=http://www.51js.com&#34;&gt;
+
+
+40.网页是否被检索
+&lt;meta name=&#34;ROBOTS&#34; content=&#34;属性值&#34;&gt;
+　　其中属性值有以下一些:
+　　属性值为&#34;all&#34;: 文件将被检索，且页上链接可被查询；
+　　属性值为&#34;none&#34;: 文件不被检索，而且不查询页上的链接；
+　　属性值为&#34;index&#34;: 文件将被检索；
+　　属性值为&#34;follow&#34;: 查询页上的链接；
+　　属性值为&#34;noindex&#34;: 文件不检索，但可被查询链接；
+　　属性值为&#34;nofollow&#34;: 文件不被检索，但可查询页上的链接。
+
+
+41、email地址的分割
+把如下代码加入&lt;body&gt;区域中
+&lt;a href=&#34;mailto:webmaster@sina.com&#34;&gt;webmaster@sina.com&lt;/a&gt;
+
+
+42、流动边框效果的表格
+把如下代码加入&lt;body&gt;区域中
+&lt;SCRIPT&gt;
+l=Array(6,7,8,9,&#39;a&#39;,&#39;b&#39;,&#39;b&#39;,&#39;c&#39;,&#39;d&#39;,&#39;e&#39;,&#39;f&#39;)
+Nx=5;Ny=35
+t=&#34;&lt;table border=0 cellspacing=0 cellpadding=0 height=&#34;+((Nx+2)*16)+&#34;&gt;&lt;tr&gt;&#34;
+for(x=Nx;x&lt;Nx+Ny;x++)
+t+=&#34;&lt;td width=16 id=a_mo&#34;+x+&#34;&gt;　&lt;/td&gt;&#34;
+t+=&#34;&lt;/tr&gt;&lt;tr&gt;&lt;td width=10 id=a_mo&#34;+(Nx-1)+&#34;&gt;　&lt;/td&gt;&lt;td colspan=&#34;+(Ny-2)+&#34; rowspan=&#34;+(Nx)+&#34;&gt;　&lt;/td&gt;&lt;td width=16 id=a_mo&#34;+(Nx+Ny)+&#34;&gt;&lt;/td&gt;&lt;/tr&gt;&#34;
+for(x=2;x&lt;=Nx;x++)
+t+=&#34;&lt;tr&gt;&lt;td width=16 id=a_mo&#34;+(Nx-x)+&#34;&gt;　&lt;/td&gt;&lt;td width=16 id=a_mo&#34;+(Ny+Nx+x-1)+&#34;&gt;　&lt;/td&gt;&lt;/tr&gt;&#34;
+t+=&#34;&lt;tr&gt;&#34;
+for(x=Ny;x&gt;0;x--)
+t+=&#34;&lt;td width=16 id=a_mo&#34;+(x+Nx*2+Ny-1)+&#34;&gt;　&lt;/td&gt;&#34;
+***(t+&#34;&lt;/tr&gt;&lt;/table&gt;&#34;)
+var N=Nx*2+Ny*2
+function f1(y){
+for(i=0;i&lt;N;i++){
+c=(i+y)%20;if(c&gt;10)c=20-c
+document.all[&#34;a_mo&#34;+(i)].bgColor=&#34;&#34;&#34;&#34;#0000&#34;+l[c]+l[c]+&#34;&#39;&#34;}
+y++
+setTimeout(&#39;f1(&#39;+y+&#39;)&#39;,&#39;1&#39;)}
+f1(1)
+&lt;/SCRIPT&gt;
+
+
+43、JavaScript主页弹出窗口技巧
+窗口中间弹出
+&lt;script&gt;
+window.open(&#34;http://www.cctv.com&#34;,&#34;&#34;,&#34;width=400,height=240,top=&#34;+(screen.availHeight-240)/2+&#34;,left=&#34;+(screen.availWidth-400)/2);
+&lt;/script&gt;
+============
+&lt;html&gt;
+&lt;head&gt;
+&lt;script language=&#34;LiveScript&#34;&gt;
+function WinOpen() {
+    msg=open(&#34;&#34;,&#34;DisplayWindow&#34;,&#34;toolbar=no,directories=no,menubar=no&#34;);
+    msg.***(&#34;&lt;HEAD&gt;&lt;TITLE&gt;哈 罗!&lt;/TITLE&gt;&lt;/HEAD&gt;&#34;);
+    msg.***(&#34;&lt;CENTER&gt;&lt;H1&gt;酷 毙 了!&lt;/H1&gt;&lt;h2&gt;这 是&lt;B&gt;JavaScript&lt;/B&gt;所 开 的 视 窗!&lt;/h2&gt;&lt;/CENTER&gt;&#34;);
+}
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;form&gt;
+&lt;input type=&#34;button&#34; name=&#34;Button1&#34; value=&#34;Push me&#34; onclick=&#34;WinOpen()&#34;&gt;
+&lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+==============
+一、在下面的代码中，你只要单击打开一个窗口，即可链接到赛迪网。而当你想关闭时，只要单击一下即可关闭刚才打开的窗口。
+　　代码如下： 
+　　&lt;SCRIPT language=&#34;JavaScript&#34;&gt; 
+　　&lt;！-- 
+　　function openclk() { 
+　　another=open(&#39;1000){this.resized=true;this.style.width=1000;}&#34; align=absMiddle border=0&gt;http://www.ccidnet.com&#39;，&#39;NewWindow&#39;); 
+　　} 
+　　function closeclk() { 
+　　another.close(); 
+　　} 
+　　//--&gt; 
+　　&lt;/SCRIPT&gt; 
+　　&lt;FORM&gt; 
+　　&lt;INPUT TYPE=&#34;BUTTON&#34; NAME=&#34;open&#34; value=&#34;/打开一个窗口&#34; onClick=&#34;openclk()&#34;&gt; 
+　　&lt;BR&gt; 
+　　&lt;INPUT TYPE=&#34;BUTTON&#34; NAME=&#34;close&#34; value=&#34;/blog/关闭这个窗口&#34; onClick=&#34;closeclk()&#34;&gt; 
+　　&lt;/FORM&gt; 
+　　二、上面的代码也太静了，为何不来点动感呢？如果能给页面来个降落效果那该多好啊！ 
+　　代码如下： 
+　　&lt;script&gt; 
+　　function drop(n) { 
+　　if(self.moveBy){ 
+　　self.moveBy (0，-900); 
+　　for(i = n; i &gt; 0; i--){ 
+　　self.moveBy(0，3); 
+　　} 
+　　for(j = 8; j &gt; 0; j--){ 
+　　self.moveBy(0，j); 
+　　self.moveBy(j，0); 
+　　self.moveBy(0，-j); 
+　　self.moveBy(-j，0); 
+　　} 
+　　} 
+　　} 
+　　&lt;/script&gt; 
+　　&lt;body onLoad=&#34;drop(300)&#34;&gt; 
+　　三、讨厌很多网站总是按照默认窗口打开，如果你能随心所欲控制打开的窗口那该多好。 
+　　代码如下: 
+　　&lt;SCRIPT LANGUAGE=&#34;JavaScript&#34;&gt; 
+　　&lt;！-- Begin 
+　　function popupPage(l， t， w， h) { 
+　　var windowprops = &#34;location=no，scrollbars=no，menubars=no，toolbars=no，resizable=yes&#34; + 
+　　&#34;，left=&#34; + l + &#34;，top=&#34; + t + &#34;，width=&#34; + w + &#34;，height=&#34; + h; 
+　　var URL = &#34;http://www.80cn.com&#34;; 
+　　popup = window.open(URL，&#34;MenuPopup&#34;，windowprops); 
+　　} 
+　　// End --&gt; 
+　　&lt;/script&gt; 
+　　&lt;table&gt; 
+　　&lt;tr&gt; 
+　　&lt;td&gt; 
+　　&lt;form name=popupform&gt; 
+　　&lt;pre&gt; 
+　　打开页面的参数&lt;br&gt; 
+　　离开左边的距离: &lt;input type=text name=left size=2 maxlength=4&gt; pixels 
+　　离开右边的距离: &lt;input type=text name=top size=2 maxlength=4&gt; pixels 
+　　窗口的宽度: &lt;input type=text name=width size=2 maxlength=4&gt; pixels 
+　　窗口的高度: &lt;input type=text name=height size=2 maxlength=4&gt; pixels 
+　　&lt;/pre&gt; 
+　　&lt;center&gt; 
+　　&lt;input type=button value=&#34;打开这个窗口！&#34; onClick=&#34;popupPage(this.form.left.value， this.form.top.value， this.form.width.value，
+this.form.height.value)&#34;&gt; 
+　　&lt;/center&gt; 
+　　&lt;/form&gt; 
+　　&lt;/td&gt; 
+　　&lt;/tr&gt; 
+　　&lt;/table&gt;你只要在相对应的对话框中输入一个数值即可，将要打开的页面的窗口控制得很好。
+
+
+44、页面的打开移动
+把如下代码加入&lt;body&gt;区域中
+&lt;SCRIPT LANGUAGE=&#34;JavaScript&#34;&gt;
+&lt;!-- Begin
+for (t = 2; t &gt; 0; t--) {
+for (x = 20; x &gt; 0; x--) {
+for (y = 10; y &gt; 0; y--) {
+parent.moveBy(0,-x);
+   }
+}
+for (x = 20; x &gt; 0; x--) {
+for (y = 10; y &gt; 0; y--) {
+parent.moveBy(0,x);
+   }
+}
+for (x = 20; x &gt; 0; x--) {
+for (y = 10; y &gt; 0; y--) {
+parent.moveBy(x,0);
+   }
+}
+for (x = 20; x &gt; 0; x--) {
+for (y = 10; y &gt; 0; y--) {
+parent.moveBy(-x,0);
+     }
+   } 
+}
+//--&gt;
+//   End --&gt;
+&lt;/script&gt;
+
+
+45、显示个人客户端机器的日期和时间
+&lt;script language=&#34;LiveScript&#34;&gt;
+&lt;!-- Hiding
+   today = new Date()
+   ***(&#34;现 在 时 间 是： &#34;,today.getHours(),&#34;:&#34;,today.getMinutes())
+   ***(&#34;&lt;br&gt;今 天 日 期 为： &#34;, today.getMonth()+1,&#34;/&#34;,today.getDate(),&#34;/&#34;,today.getYear());
+// end hiding contents --&gt;
+&lt;/script&gt;
+
+
+46、自动的为你每次产生最後修改的日期了： 
+&lt;html&gt;
+&lt;body&gt;
+This is a simple HTML- page.
+&lt;br&gt;
+Last changes:
+   &lt;script language=&#34;LiveScript&#34;&gt;
+   &lt;!--   hide script from old browsers
+     ***(document.lastModified)
+   // end hiding contents --&gt;
+   &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+47、不能为空和邮件地址的约束：
+&lt;html&gt;
+&lt;head&gt;
+&lt;script language=&#34;JavaScript&#34;&gt;
+&lt;!-- Hide
+function test1(form) {
+   if (form.text1.value == &#34;&#34;)
+     alert(&#34;您 没 写 上 任 何 东 西， 请 再 输 入 一 次 !&#34;)
+   else { 
+    alert(&#34;嗨 &#34;+form.text1.value+&#34;! 您 已 输 入 完 成 !&#34;);
+   }
+}
+function test2(form) {
+   if (form.text2.value == &#34;&#34; || 
+       form.text2.value.indexOf(&#39;@&#39;, 0) == -1) 
+         alert(&#34;这 不 是 正 确 的 e-mail address! 请 再 输 入 一 次 !&#34;);
+   else alert(&#34;您 已 输 入 完 成 !&#34;);
+}
+// --&gt;
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;form name=&#34;first&#34;&gt;
+Enter your name:&lt;br&gt;
+&lt;input type=&#34;text&#34; name=&#34;text1&#34;&gt;
+&lt;input type=&#34;button&#34; name=&#34;button1&#34; value=&#34;输 入 测 试&#34; onClick=&#34;test1(this.form)&#34;&gt;
+&lt;P&gt;
+Enter your e-mail address:&lt;br&gt;
+&lt;input type=&#34;text&#34; name=&#34;text2&#34;&gt;
+&lt;input type=&#34;button&#34; name=&#34;button2&#34; value=&#34;输 入 测 试&#34; onClick=&#34;test2(this.form)&#34;&gt;
+&lt;/body&gt;
+
+
+48、跑马灯
+&lt;html&gt;
+&lt;head&gt;
+&lt;script language=&#34;JavaScript&#34;&gt;
+&lt;!-- Hide
+var scrtxt=&#34;怎麽样 ! 很酷吧 ! 您也可以试试.&#34;+&#34;Here goes your message the visitors to your 
+page will &#34;+&#34;look at for hours in pure fascination...&#34;;
+var lentxt=scrtxt.length;
+var width=100;
+var pos=1-width;
+function scroll() {
+   pos++;
+   var scroller=&#34;&#34;;
+   if (pos==lentxt) {
+     pos=1-width;
+   }
+   if (pos&lt;0) {
+     for (var i=1; i&lt;=Math.abs(pos); i++) {
+       scroller=scroller+&#34; &#34;;}
+     scroller=scroller+scrtxt.substring(0,width-i+1);
+   }
+   else {
+     scroller=scroller+scrtxt.substring(pos,width+pos);
+   }
+   window.status = scroller;
+   setTimeout(&#34;scroll()&#34;,150);
+   }
+//--&gt;
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body onLoad=&#34;scroll();return true;&#34;&gt;
+这里可显示您的网页 !
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+49、在网页中用按钮来控制前页，后页和主页的显示。
+&lt;html&gt;
+&lt;body&gt;
+&lt;FORM NAME=&#34;buttonbar&#34;&gt;
+      &lt;INPUT TYPE=&#34;button&#34; VALUE=&#34;Back&#34; onClick=&#34;history.back()&#34;&gt;
+      &lt;INPUT TYPE=&#34;button&#34; VALUE=&#34;JS- Home&#34; onClick=&#34;location=&#39;script.html&#39;&#34;&gt;
+      &lt;INPUT TYPE=&#34;button&#34; VALUE=&#34;Next&#34; onCLick=&#34;history.forward()&#34;&gt;
+&lt;/FORM&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+50、查看某网址的源代码
+把如下代码加入&lt;body&gt;区域中
+&lt;SCRIPT&gt;
+function add()
+{
+var ress=document.forms[0].luxiaoqing.value
+window.location=&#34;view-source:&#34;+ress;
+}
+&lt;/SCRIPT&gt;
+输入要查看源代码的URL地址:
+&lt;FORM&gt;&lt;input type=&#34;text&#34; name=&#34;luxiaoqing&#34; size=40 value=&#34;http://&#34;&gt;&lt;/FORM&gt;
+&lt;FORM&gt;&lt;br&gt;
+&lt;INPUT type=&#34;button&#34; value=&#34;查看源代码&#34; onClick=add()&gt;
+&lt;/FORM&gt;
+
+
+51、title显示日期
+把如下代码加入&lt;body&gt;区域中:
+&lt;script language=&#34;JavaScript1.2&#34;&gt;
+&lt;!--hide
+var isnMonth = new
+Array(&#34;1月&#34;,&#34;2月&#34;,&#34;3月&#34;,&#34;4月&#34;,&#34;5月&#34;,&#34;6月&#34;,&#34;7月&#34;,&#34;8月&#34;,&#34;9月&#34;,&#34;10月&#34;,&#34;11月&#34;,&#34;12月&#34;);
+var isnDay = new
+Array(&#34;星期日&#34;,&#34;星期一&#34;,&#34;星期二&#34;,&#34;星期三&#34;,&#34;星期四&#34;,&#34;星期五&#34;,&#34;星期六&#34;,&#34;星期日&#34;);
+today = new Date () ;
+Year=today.getYear();
+Date=today.getDate();
+if (document.all)
+document.title=&#34;今天是: &#34;+Year+&#34;年&#34;+isnMonth[today.getMonth()]+Date+&#34;日&#34;+isnDay[today.getDay()]
+//--hide--&gt;
+&lt;/script&gt;
+
+
+52、显示所有链接
+把如下代码加入&lt;body&gt;区域中
+&lt;script language=&#34;JavaScript1.2&#34;&gt;
+&lt;!--
+function extractlinks(){
+var links=document.all.tags(&#34;A&#34;)
+var total=links.length
+var win2=window.open(&#34;&#34;,&#34;&#34;,&#34;menubar,scrollbars,toolbar&#34;)
+win2.***(&#34;&lt;font size=&#39;2&#39;&gt;一共有&#34;+total+&#34;个连接&lt;/font&gt;&lt;br&gt;&#34;)
+for (i=0;i&lt;total;i++){
+win2.***(&#34;&lt;font size=&#39;2&#39;&gt;&#34;+links[i].outerHTML+&#34;&lt;/font&gt;&lt;br&gt;&#34;)
+}
+}
+//--&gt;
+&lt;/script&gt;
+&lt;input type=&#34;button&#34; onClick=&#34;extractlinks()&#34; value=&#34;显示所有的连接&#34;&gt;
+
+
+53、回车键换行
+把如下代码加入&lt;body&gt;区域中
+&lt;script type=&#34;text/javascript&#34;&gt;                
+function handleEnter (field, event) {
+   var keyCode = event.keyCode ? event.keyCode : event.which ?
+event.which : event.charCode;
+   if (keyCode == 13) {
+    var i;
+    for (i = 0; i &lt; field.form.elements.length; i++)
+     if (field == field.form.elements[i])
+      break;
+    i = (i + 1) % field.form.elements.length;
+    field.form.elements[i].focus();
+    return false;
+   } 
+   else
+   return true;
+}      
+&lt;/script&gt;
+&lt;form&gt;
+&lt;input type=&#34;text&#34; onkeypress=&#34;return handleEnter(this, event)&#34;&gt;&lt;br&gt;
+&lt;input type=&#34;text&#34; onkeypress=&#34;return handleEnter(this, event)&#34;&gt;&lt;br&gt;
+&lt;textarea&gt;回车换行
+
+
+54、确认后提交
+把如下代码加入&lt;body&gt;区域中
+&lt;SCRIPT LANGUAGE=&#34;JavaScript&#34;&gt;
+&lt;!--
+function msg(){
+if (confirm(&#34;你确认要提交嘛！&#34;))
+document.lnman.submit()
+}
+//--&gt;
+&lt;/SCRIPT&gt;
+&lt;form name=&#34;lnman&#34; method=&#34;post&#34; action=&#34;&#34;&gt;
+   &lt;p&gt;
+     &lt;input type=&#34;text&#34; name=&#34;textfield&#34; value=&#34;确认后提交&#34;&gt;
+   &lt;/p&gt;
+   &lt;p&gt;
+     &lt;input type=&#34;button&#34; name=&#34;Submit&#34; value=&#34;提交&#34; onclick=&#34;msg();&#34;&gt;
+   &lt;/p&gt;
+&lt;/form&gt;
+
+
+55、改变表格的内容
+把如下代码加入&lt;body&gt;区域中
+&lt;script ***script&gt;
+var arr=new Array()
+arr[0]=&#34;一一一一一&#34;;
+arr[1]=&#34;二二二二二&#34;;
+arr[2]=&#34;三三三三三&#34;;
+&lt;/script&gt;
+&lt;select onchange=&#34;zz.cells[this.selectedIndex].innerHTML=arr[this.selectedIndex]&#34;&gt;
+   &lt;option value=a&gt;改变第一格&lt;/option&gt;
+   &lt;option value=a&gt;改变第二格&lt;/option&gt;
+   &lt;option value=a&gt;改变第三格&lt;/option&gt;
+&lt;/select&gt;
+&lt;table id=zz border=1&gt;
+   &lt;tr height=20&gt;
+     &lt;td width=150&gt;第一格&lt;/td&gt;
+&lt;td width=150&gt;第二格&lt;/td&gt;
+&lt;td width=150&gt;第三格&lt;/td&gt;
+   &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre></div><footer class=post-footer>
+<nav class=paginav>
+<a class=prev href=https://yzqtpl.github.io/hugo-blog/post/eclipse%E5%9B%BD%E5%86%85%E4%B8%8B%E8%BD%BD%E5%8D%87%E7%BA%A7%E6%96%B9%E6%B3%95/>
+<span class=title>« 上一页</span>
+<br>
+<span></span>
+</a>
+<a class=next href=https://yzqtpl.github.io/hugo-blog/post/java%E6%8F%8F%E8%BF%B0/>
+<span class=title>下一页 »</span>
+<br>
+<span></span>
+</a>
+</nav></footer></article></main><footer class=footer>
+<span>&copy; 2022 <a href=https://yzqtpl.github.io/hugo-blog>PaperModL</a></span>
+<span>
+Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://git.io/hugopapermod rel=noopener target=_blank>PaperMod</a>
+</span>
+</footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
+</a>
+<script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(t){t.preventDefault();var e=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(e)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(e)}']`).scrollIntoView({behavior:"smooth"}),e==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${e}`)})})</script>
+<script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script>
+<script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script>
+<script>document.querySelectorAll("pre > code").forEach(t=>{const n=t.parentNode.parentNode,e=document.createElement("button");e.classList.add("copy-code"),e.innerText="复制";function s(){e.innerText="已复制！",setTimeout(()=>{e.innerText="复制"},2e3)}e.addEventListener("click",o=>{if("clipboard"in navigator){navigator.clipboard.writeText(t.textContent),s();return}const e=document.createRange();e.selectNodeContents(t);const n=window.getSelection();n.removeAllRanges(),n.addRange(e);try{document.execCommand("copy"),s()}catch(e){}n.removeRange(e)}),n.classList.contains("highlight")?n.appendChild(e):n.parentNode.firstChild==n||(t.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName=="TABLE"?t.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(e):t.parentNode.appendChild(e))})</script>
+</body></html>

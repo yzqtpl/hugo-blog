@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://yzqtpl.github.io/hugo-blog/sitemap.xml

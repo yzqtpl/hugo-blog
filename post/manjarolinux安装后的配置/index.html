@@ -1,0 +1,443 @@
+<!doctype html><html lang=zh dir=auto>
+<head><meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<meta name=robots content="index, follow">
+<title>生活 | PaperModL</title><meta name=keywords content="生活">
+<meta name=description content="' 这也是手动指定的概要内容。 这也是个多行文本
+但这个 front matter 是 TOML 格式，所以只需要使用三个引号包裹多行内容即可。 无需额外缩进。 '">
+<meta name=author content="Theme PaperMod">
+<link rel=canonical href=https://yzqtpl.github.io/hugo-blog/post/manjarolinux%E5%AE%89%E8%A3%85%E5%90%8E%E7%9A%84%E9%85%8D%E7%BD%AE/>
+<link crossorigin=anonymous href=/hugo-blog/assets/css/stylesheet.min.c88963fe2d79462000fd0fb1b3737783c32855d340583e4523343f8735c787f0.css integrity="sha256-yIlj/i15RiAA/Q+xs3N3g8MoVdNAWD5FIzQ/hzXHh/A=" rel="preload stylesheet" as=style>
+<script defer crossorigin=anonymous src=/hugo-blog/assets/js/highlight.min.4dcb3c4f38462f66c6b6137227726f5543cb934cca9788f041c087e374491df2.js integrity="sha256-Tcs8TzhGL2bGthNyJ3JvVUPLk0zKl4jwQcCH43RJHfI=" onload=hljs.initHighlightingOnLoad()></script>
+<link rel=icon href=https://yzqtpl.github.io/hugo-blog/favicon.ico>
+<link rel=icon type=image/png sizes=16x16 href=https://yzqtpl.github.io/hugo-blog/favicon-16x16.png>
+<link rel=icon type=image/png sizes=32x32 href=https://yzqtpl.github.io/hugo-blog/favicon-32x32.png>
+<link rel=apple-touch-icon href=https://yzqtpl.github.io/hugo-blog/apple-touch-icon.png>
+<link rel=mask-icon href=https://yzqtpl.github.io/hugo-blog/safari-pinned-tab.svg>
+<meta name=theme-color content="#2e2e33">
+<meta name=msapplication-TileColor content="#2e2e33">
+<link rel=alternate hreflang=zh href=https://yzqtpl.github.io/hugo-blog/post/manjarolinux%E5%AE%89%E8%A3%85%E5%90%8E%E7%9A%84%E9%85%8D%E7%BD%AE/>
+<noscript>
+<style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><meta property="og:title" content="生活">
+<meta property="og:description" content="' 这也是手动指定的概要内容。 这也是个多行文本
+但这个 front matter 是 TOML 格式，所以只需要使用三个引号包裹多行内容即可。 无需额外缩进。 '">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://yzqtpl.github.io/hugo-blog/post/manjarolinux%E5%AE%89%E8%A3%85%E5%90%8E%E7%9A%84%E9%85%8D%E7%BD%AE/"><meta property="og:image" content="https://yzqtpl.github.io/hugo-blog/papermod-cover.png"><meta property="article:section" content="post">
+<meta property="article:published_time" content="2018-01-01T02:00:00+00:00">
+<meta property="article:modified_time" content="2018-01-01T02:00:00+00:00"><meta property="og:site_name" content="PaperModL">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="https://yzqtpl.github.io/hugo-blog/papermod-cover.png">
+<meta name=twitter:title content="生活">
+<meta name=twitter:description content="' 这也是手动指定的概要内容。 这也是个多行文本
+但这个 front matter 是 TOML 格式，所以只需要使用三个引号包裹多行内容即可。 无需额外缩进。 '">
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":2,"name":"Posts","item":"https://yzqtpl.github.io/hugo-blog/post/"},{"@type":"ListItem","position":3,"name":"生活","item":"https://yzqtpl.github.io/hugo-blog/post/manjarolinux%E5%AE%89%E8%A3%85%E5%90%8E%E7%9A%84%E9%85%8D%E7%BD%AE/"}]}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"生活","name":"生活","description":"' 这也是手动指定的概要内容。 这也是个多行文本\n但这个 front matter 是 TOML 格式，所以只需要使用三个引号包裹多行内容即可。 无需额外缩进。 '","keywords":["生活"],"articleBody":" 记得进入设置工作空间行为锁屏关闭自动锁屏，不然会卡死在登陆\n分区工具的使用 partitionmanager  sudo yay -S partitionmanager  pacman 的日常使用  安装todesk远程控制\nyay -Ss todesk 找到todesk yay -S todesk-bin # 需要开启u服务 systemctl start todeskd.service pacman -S xx1 xx2 # 安装或升级软件包，或者一列软件包（包含依赖包） pacman -Sy # 更新软件源 pacman -Syy # 强制更新软件源 pacman -Su # 更新软件包 pacman -Syu # 更新软件源并更新软件包（-Syyu） pacman -Sc # 清除软件包缓存 pacman -Ss xxx # 搜索名字含 xxx 的软件 pacman -Ss ^xxx # 搜索名字以 xxx 开头的软件 pacman -R xxx # 删除单个软件包，保留其安装的依赖关系 pacman -Rs xxx # 删除指定软件包，及其没有被其他已安装软件包使用的依赖关系 pacman -Rn xxx # 一并删除全局配置文件 pacman -Rns xxx # 删除一个软件的推荐命令 pacman -Rns $(pacman -Qdtq) # 删除没有依赖的包 pacman -Q # 查询本地软件包数据库 pacman -Qq # 查询本地软件包数据库，但不显示版本信息 pacman -Qe # 查询非系统自带软件包数据库 pacman -Q | wc -l # 查看有多少本地软件包 pacman -Qs regex # 按正则表达式查询软件包 pacman -Qdt # 查看没有依赖的包 更换源 //1.配置镜像源: sudo pacman-mirrors -i -c China -m rank //2.设置 archlinuxcn 源, #使用方法：在 /etc/pacman.conf 文件末尾添加以下两行：  [archlinuxcn] Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch  # 之后安装 archlinuxcn-keyring 包导入 GPG key。 //3.更新源列表 sudo pacman-mirrors -g //4.更新pacman数据库并全面更新系统 sudo pacman -Syyu //5.更新签名 sudo pacman -S archlinuxcn-keyring //6.安装yay,e更换aur的源 sudo pacman -S yay git net-tools tree vim //7.执行以下命令修改 aururl : yay --aururl \"https://aur.tuna.tsinghua.edu.cn\" --save //8.修改的配置文件位于 `~/.config/yay/config.json` ，还可通过以下命令查看修改过的配置： yay -P -g 以后就可以直接执行yay -S 你要安装的软件名字，比如 yay -S netease-cloud-music 更新文件夹语言 export LANG=en_US xdg-user-dirs-gtk-update //弹出对话框，问是否改成英文，点是，并且选“不再提示” export LANG=zh_CN 安装常用的软件： yay -S net-tools base-devel 浏览器我推荐brave浏览器 yay -S brave chrome浏览器： yay -S google-chrome Microsoft-edge浏览器：yay -S microsoft-edge-dev-bin Git软件： yay -S git Uget配合aria2： yay -S aria2 下载工具： yay -S uget 解压工具： yay -S p7zip file-roller unrar 图像编辑器： yay -S gimp （开源版PS） WPS办公： yay -S wps-office WPS缺少的字体： yay -S ttf-wps-fonts WPS安装中文： sudo pacman -S wps-office-mui-zh-cn Vscode开发工具： yay -S visual-studio-code-bin Markdown编辑器： yay -S typora 强大的Web内容（视频，音频，图片）下载工具： yay -S you-get 火焰截图： yay -S flameshot (超好用,系统设置里面添加快捷键即可) 云笔记软件： yay -S joplin (开源免费，云服务需要飞天服务) chm文件阅读器： yay -S kchmviewer 有道词典： yay -S youdao-dict 开源电子书阅读器： yay -S calibre MD文件编辑器： yay -S typora Gif录制软件： yay -S peek sudo pacman -S filezilla # 关闭电子钱包 用了kde以后，每次打开浏览器都会跳出电子钱包什么的，十分烦人，也可能是我自己不习惯 于是就想办法把他关掉！ 搜索Kwallet， 不是KwalletManager 然后把启用的勾勾去掉就好啦 安装docker： sudo pacman -S docker sudo pacman -S docker-compose 安装java： （https://wiki.archlinux.org/index.php/Java#Installation）\n sudo pacman -S java-runtime-common java-environment-common yay jdk8 # Select extra/jdk8-openjdk 使用 archlinux-java 命令来管理 Java 环境。 列举 Java 环境： archlinux-java status 选择 Java 环境： sudo archlinux-java set java-8-openjdk  打开.bashrc # 在后面加上， 地址根据你jdk修改 export JAVA_HOME=/home/hxy/java/jdk-13 export JRE_HOME=${JAVA_HOME}/jre export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib export PATH=${JAVA_HOME}/bin:$PATH  # 启用配置，不过我这边不知道怎么退出（我是强制关掉） source .bashrc  # 查看是否配置成功 java -version 安装node,nvm，yarn： 先配置下载github太慢  kate /etc/hosts 在最后添加 199.232.68.133 raw.githubusercontent.com # 1.下载nvm脚本文件 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.36.0/install.sh | bash # 2. 或者： export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node # 注：如果只是在终端输入了上面的代码只能在本次窗口没有关闭的时候生效，下次打开还是会还原成默认的源 # 如果需要长久的使用淘宝源则需要如下操作 # 确认你的sh是什么，一般bash或者zsh # 如果是 bash 则键入  echo \"export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node\"  ~/.bash_profile  # 如果是 zsh 则输入  echo \"export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node\"  ~/.zshrc  # 最后再分别执行命令  # bash 为 ：source ~/.bash_profile  # zsh 为 ：source ~/.zshrc 等同于 在.bashrc中添加下面的内容 export NVM_NODEJS_ORG_MIRROR=http://npm.taobao.org/mirrors/node 3.下载node,配置国内镜像 nvm install node 设置npm国内镜像 npm config set registry https://registry.npm.taobao.org 安装镜像服务 npm i -g mirror-config-china npm i -g yarn 设置yarn镜像（可以做成一个a.sh脚本执行） yarn config set registry https://registry.npm.taobao.org -g yarn config set disturl https://npm.taobao.org/dist -g yarn config set electron_mirror https://npm.taobao.org/mirrors/electron/ -g yarn config set sass_binary_site https://npm.taobao.org/mirrors/node-sass/ -g yarn config set phantomjs_cdnurl https://npm.taobao.org/mirrors/phantomjs/ -g yarn config set chromedriver_cdnurl https://cdn.npm.taobao.org/dist/chromedriver -g yarn config set operadriver_cdnurl https://cdn.npm.taobao.org/dist/operadriver -g yarn config set fse_binary_host_mirror https://npm.taobao.org/mirrors/fsevents -g 安装miniconda： 从清华镜像下载miniconda执行的sh  https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/   配置conda国内镜像  i在.condarc中加入下面的：  channels:  - defaults show_channel_urls: true channel_alias: https://mirrors.tuna.tsinghua.edu.cn/anaconda default_channels:  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/pro  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/msys2 custom_channels:  conda-forge: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud  msys2: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud  bioconda: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud  menpo: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud  pytorch: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud  simpleitk: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud  安装Anaconda后终端出现的(base)字样去除方法：\nconda config --set auto_activate_base False 安装输入法： 设置小键盘开机自动启动方法 打开设置 找到输入设备-键盘 - plasma启动时numlock状态-开启即可 关闭触控板也是输入设备-触摸板\n下载fcitx5并安装 sudo yay -S fcitx5 fcitx5-chinese-addons fcitx5-rime fcitx5-chewing fcitx5-configtool 1、在用户文件夹下创建.xprofile配置文件  输入命令 sudo vim ~/.xprofile  然后插入如下内容 export GTK_IM_MODULE=fcitx5 export QT_IM_MODULE=fcitx5 export XMODIFIERS=@im=fcitx 2、设置fcitx5为开机启动 ①: 直接在~/.xprofile中插入下面这行 fcitx5 \u0026 ②: 如果是KDE用户，可在系统设置-启动和关闭-自启动中填加fcitx5为开机自启动项 编辑~`/.pam_environment` INPUT_METHOD DEFAULT=fcitx5 GTK_IM_MODULE DEFAULT=fcitx5 QT_IM_MODULE DEFAULT=fcitx5 XMODIFIERS DEFAULT=\\@im=fcitx5 安装golang: 1.使用pacman/yay sudo pacman -S go go-tools  可选用 gcc-go ，但若需要使用 JetBrains 的 IDE 则必须使用 go ，否则 IDE 无法在 /usr/lib/go 下找到 Go SDK。\n 2.从官网下载 在golang官网下载go的安装包，go1.16.linux-amd64.tar.gz 然后 # 1.解压到local目录 wget https://golang.google.cn/dl/go1.16.4.linux-amd64.tar.gz sudo tar -C /opt -xzf go1.16.4.linux-amd64.tar.gz # 2.编辑环境变量，在/etc/profile和.bashrc添加 #vim ~/.zshrc # OR ~/.bashrc OR ~/.profile cp -r ~/.bashrc ~/bashrcbak # 添加a环境变量 export GOMODPATH=/opt/go export PATH=\"$GOMODPATH/bin:$GOMODPATH/golangmod/bin:$PATH\" # 修改/opt的权限 sudo chmod -R 777 /opt/go    echo 'export GOMODPATH=/opt/go export PATH=\"$GOMODPATH/bin:$GOMODPATH/golangmod/bin:$PATH\"' ~/.bashrc source ~/.bashrc # 3.输入go version检查是否有安装成功 # 4.配置go代理 go env -w GO111MODULE=on go env -w GOPROXY=https://goproxy.cn,direct go env -w GOPATH=/opt/go/golangmod 安装teamviewer yay -S teamviewer 提示：TeamViewer Daemon is not running，解决方法： sudo teamviewer --daemon enable 安装myql：（已经被替换为mariadb,请使用下面的方法） 如果要使用mysql8,需要设置aur！！！！！！！\n//下载Mysql pacman -S mysql //初始化Mysql，记住生成的密码，方便修改 sudo mysqld --initialize --user=mysql --basedir=/usr --datadir=/var/lib/mysql //设置开机启动 systemctl enable mysqld.service //启动Mysql sudo systemctl start mysqld.service //修改密码 mysql -u root -p mysql ALTER USER 'root'@'localhost' IDENTIFIED BY '新密码'; 如果忘记密码，直接百度mysql8忘记密码怎么办\nmanjaro 。忘记密码解决办法： # 1.先编辑mysql配置文件 kate /etc/mysql/my.cnf # 2.添加一个 skip-grant-tables # 3. 重启mysql服务 sudo systemctl restart mysqld # 4.进入mysql 直接在命令行进入lmysql # 5 设置 root密码为空 mysqluse mysql; mysqlupdate user set authentication_string='' where user='root'; #将密码置空  mysqlexit #6 去掉mysql配置文件里的 skip-grant-tables 重新登陆mysql使用 mysql -uroot -p #两次确定就可进去 #7. ALTER USER 'root'@'localhost' IDENTIFIED BY '新密码';# 然后退出mysql登陆就可以了 如果出现 ER_NOT_SUPPORTED_AUTH_MODE: Client does not support authentication protocol requested by server; consider upgrading MySQL client 命令行进入mysql输入\nALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '123456' 就可以连上了\n安装mariadb ##1. 安装 与Ubuntu不同，arch默认已经不再支持MySQL，但是可以安装MariaDB，其比MySQL的性能更好且操作基本相同。 输入下面命令安装：\nsystemctl stop mysqld //停止mysql服务 sudo pacman -S mariadb libmariadbclient mariadb-clients //安装mariadb sudo mysql_install_db --user=mysql --basedir=/usr --datadir=/var/lib/mysql 复制代码 ##2. 启动\nsystemctl start mariadb mysql_secure_installation //设置密码等管理操作 systemctl restart mariadb 复制代码 登录：\nmysql -u root -p 安装postgressql 安装：\nsudo pacman -S postgresql 初始化(必须)：\nsudo su - postgres -c \"initdb --locale zh_CN.UTF-8 -E UTF8 -D '/var/lib/postgres/data'\" 其中，我将原本的en_US改为了zh_CN，未见异常。想要撤销的话，只需要把'/var/lib/postgres/data'下面的内容清空。 启动/开机启动 PostgreSQL：\nsystemctl start postgresql.service systemctl enable postgresql.service 切换到postgres用户，然后登录（初始无密码）：\nsudo -i -u postgres psql 要退出psql或返回原用户，都是用exit命令。 PostgreSQL的用户跟系统用户有些关联，前者必须也是后者。在初始化过程中会在系统中创建postgres用户，同时也是数据库的超级权限用户，postgres用户可以创建其他数据库用户。\n 提示： 如果创建一个与你的系统用户同名的数据库用户，并允许其访问 PostgreSQL 数据库，那么在登录PostgreSQL 数据库 shell 的时候无需切换用户（这样做会比较方便）。\n 通用基本操作[1] 数据库shell外 添加数据库（须在原用户操作）：\ncreatedb myDatabaseName 连接数据库shell（须用postgres用户，所以先切一下用户）：\nsudo -i -u postgres psql -d myDatabaseName 也可以一步进入postgres用户的myDatabaseName数据库，与上面效果一样：\npsql -U postgres -d myDatabaseName 若要创建用户，要在数据库程序外，用postgres用户执行：\ncreateuser --interactive myUserName 数据库shell内 注意：数据库内的SQL语句，建议大写，必须分号结尾。 进入数据库后可修改密码：\nalter user postgres with password ' *** 密码 *** '; 如果有其他用户，可以把postgres换成其他用户的名。 一些常用的命令：\n\\c myDatabaseName # 连接到数据库myDatabaseName \\du # 列出所有用户以及他们的权限 \\dt # 展示当前数据库中所有的表相关的汇总信息 \\q # 退出psql 开启ssh服务 systemctl enable sshd.service 开机启动 systemctl start sshd.service 立即启动 systemctl restart sshd.service 立即重启 安装nginx： yay -S nginx-mainline 安装redis： yay -S redis  1 启动服务端 sudo redis-server 启动redis 2 启动客户端 sudo redis-cli systemctl redis start # 关闭redis systemctl redis stop # 开机自启动 systemctl enable redis 配置redis密码：在/etc/redis.conf中找到requirepass,去掉h注释并更换为自己的密码； 出现\nSystem limit for number of file watchers reached echo fs.inotify.max_user_watches = 524288 | sudo tee -a /etc/sysctl.conf sudo sysctl -p 安装php和composer 安装php：\nyay -S php 第一步，下载composer。（切换到项目的根目录，再执行）\nphp -r \"readfile('https://getcomposer.org/installer');\" | php 下载之后后自动安装，执行 php composer.phar。查看composer是否安装成功。 第二步，将composer.phar文件移动到bin目录以便全局使用composer命令\ncp -r composer.phar /usr/local/bin/composer （如果只是针对某个项目使用composer,可忽略此步） 第三步，切换国内源（如果第一步下载成功，可忽略此步）\ncomposer config -g repo.packagist composer https://packagist.phpcomposer.com 第四步，安装phpcgi\nyay -S php-apache php-cgi php-fpm php-gd php-embed php-intl php-imap php-redis php-snmp 第五步，安装pecl\nwget http://pear.php.net/go-pear.phar php go-pear.phar 第六步，安装xdebug\nsudo pecl install xdebug  //为php.ini 添加 extension=xdebug.so sudo vim /etc/php/php.ini sudo systemctl reload php-fpm ","wordCount":"1029","inLanguage":"zh","datePublished":"2018-01-01T02:00:00Z","dateModified":"2018-01-01T02:00:00Z","author":{"@type":"Person","name":"Theme PaperMod"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://yzqtpl.github.io/hugo-blog/post/manjarolinux%E5%AE%89%E8%A3%85%E5%90%8E%E7%9A%84%E9%85%8D%E7%BD%AE/"},"publisher":{"@type":"Organization","name":"PaperModL","logo":{"@type":"ImageObject","url":"https://yzqtpl.github.io/hugo-blog/favicon.ico"}}}</script>
+</head><body id=top>
+<script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script>
+<header class=header>
+<nav class=nav>
+<div class=logo>
+<a href=https://yzqtpl.github.io/hugo-blog accesskey=h title="PaperModL (Alt + H)">PaperModL</a>
+<span class=logo-switches>
+<button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+</button>
+<ul class=lang-switch><li>|</li><li>
+<a href=https://yzqtpl.github.io/hugo-blog/en/ title=English aria-label=English>English</a>
+</li></ul></span>
+</div><ul id=menu>
+<li>
+<a href=https://yzqtpl.github.io/hugo-blog/archives/ title=Archive>
+<span>Archive</span>
+</a>
+</li><li>
+<a href=https://yzqtpl.github.io/hugo-blog/categories title=Categories>
+<span>Categories</span>
+</a>
+</li><li>
+<a href=https://yzqtpl.github.io/hugo-blog/series title=Series>
+<span>Series</span>
+</a>
+</li><li>
+<a href=https://yzqtpl.github.io/hugo-blog/tags title=Tags>
+<span>Tags</span>
+</a>
+</li></ul></nav></header><main class=main>
+<article class=post-single>
+<header class=post-header>
+<div class=breadcrumbs><a href=https://yzqtpl.github.io/hugo-blog>主页</a>&nbsp;»&nbsp;<a href=https://yzqtpl.github.io/hugo-blog/post/>Posts</a></div><h1 class=post-title>
+生活
+</h1><div class=post-description>
+' 这也是手动指定的概要内容。 这也是个多行文本
+但这个 front matter 是 TOML 格式，所以只需要使用三个引号包裹多行内容即可。 无需额外缩进。 '
+</div><div class=post-meta><span title="2018-01-01 02:00:00 +0000 UTC">一月 1, 2018</span>&nbsp;·&nbsp;5 分钟&nbsp;·&nbsp;Theme PaperMod&nbsp;|&nbsp;<a href=https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/content/post/manjarolinux%e5%ae%89%e8%a3%85%e5%90%8e%e7%9a%84%e9%85%8d%e7%bd%ae.md rel="noopener noreferrer" target=_blank>Suggest Changes</a>
+</div></header><div class=toc>
+<details>
+<summary accesskey=c title="(Alt + C)">
+<span class=details>目录</span>
+</summary>
+<div class=inner><ul>
+<li>
+<a href=#%e5%88%86%e5%8c%ba%e5%b7%a5%e5%85%b7%e7%9a%84%e4%bd%bf%e7%94%a8-partitionmanager aria-label="分区工具的使用 partitionmanager">分区工具的使用 partitionmanager</a></li><li>
+<a href=#pacman-%e7%9a%84%e6%97%a5%e5%b8%b8%e4%bd%bf%e7%94%a8 aria-label="pacman 的日常使用">pacman 的日常使用</a></li><li>
+<a href=#%e6%9b%b4%e6%8d%a2%e6%ba%90 aria-label=更换源>更换源</a></li><li>
+<a href=#%e6%9b%b4%e6%96%b0%e6%96%87%e4%bb%b6%e5%a4%b9%e8%af%ad%e8%a8%80 aria-label=更新文件夹语言>更新文件夹语言</a></li><li>
+<a href=#%e5%ae%89%e8%a3%85%e5%b8%b8%e7%94%a8%e7%9a%84%e8%bd%af%e4%bb%b6 aria-label=安装常用的软件：>安装常用的软件：</a></li><li>
+<a href=#%e5%ae%89%e8%a3%85docker aria-label=安装docker：>安装docker：</a></li><li>
+<a href=#%e5%ae%89%e8%a3%85java aria-label=安装java：>安装java：</a></li><li>
+<a href=#%e5%ae%89%e8%a3%85nodenvmyarn aria-label=安装node,nvm，yarn：>安装node,nvm，yarn：</a></li><li>
+<a href=#%e5%ae%89%e8%a3%85miniconda aria-label=安装miniconda：>安装miniconda：</a></li><li>
+<a href=#%e5%ae%89%e8%a3%85%e8%be%93%e5%85%a5%e6%b3%95 aria-label=安装输入法：>安装输入法：</a></li><li>
+<a href=#%e5%ae%89%e8%a3%85golang aria-label=安装golang:>安装golang:</a><ul>
+<li>
+<a href=#1%e4%bd%bf%e7%94%a8pacmanyay aria-label=1.使用pacman/yay>1.使用pacman/yay</a></li><li>
+<a href=#2%e4%bb%8e%e5%ae%98%e7%bd%91%e4%b8%8b%e8%bd%bd aria-label=2.从官网下载>2.从官网下载</a></li></ul></li><li>
+<a href=#%e5%ae%89%e8%a3%85teamviewer aria-label=安装teamviewer>安装teamviewer</a></li><li>
+<a href=#%e5%ae%89%e8%a3%85myql%e5%b7%b2%e7%bb%8f%e8%a2%ab%e6%9b%bf%e6%8d%a2%e4%b8%bamariadb%e8%af%b7%e4%bd%bf%e7%94%a8%e4%b8%8b%e9%9d%a2%e7%9a%84%e6%96%b9%e6%b3%95 aria-label=安装myql：（已经被替换为mariadb,请使用下面的方法）>安装myql：（已经被替换为mariadb,请使用下面的方法）</a><ul>
+<li>
+<a href=#manjaro-%e5%bf%98%e8%ae%b0%e5%af%86%e7%a0%81%e8%a7%a3%e5%86%b3%e5%8a%9e%e6%b3%95 aria-label="manjaro 。忘记密码解决办法：">manjaro 。忘记密码解决办法：</a></li></ul></li><li>
+<a href=#%e5%a6%82%e6%9e%9c%e5%87%ba%e7%8e%b0 aria-label=如果出现>如果出现</a></li><li>
+<a href=#%e5%ae%89%e8%a3%85mariadb aria-label=安装mariadb>安装mariadb</a></li><li>
+<a href=#%e5%ae%89%e8%a3%85postgressql aria-label=安装postgressql>安装postgressql</a><ul>
+<li>
+<a href=#%e9%80%9a%e7%94%a8%e5%9f%ba%e6%9c%ac%e6%93%8d%e4%bd%9c1fn1 aria-label=通用基本操作[1]>通用基本操作<a href=#fn1>[1]</a></a><ul>
+<li>
+<a href=#%e6%95%b0%e6%8d%ae%e5%ba%93shell%e5%a4%96 aria-label=数据库shell外>数据库shell外</a></li><li>
+<a href=#%e6%95%b0%e6%8d%ae%e5%ba%93shell%e5%86%85 aria-label=数据库shell内>数据库shell内</a></li></ul></li></ul></li><li>
+<a href=#%e5%bc%80%e5%90%afssh%e6%9c%8d%e5%8a%a1 aria-label=开启ssh服务>开启ssh服务</a></li><li>
+<a href=#%e5%ae%89%e8%a3%85nginx aria-label=安装nginx：>安装nginx：</a></li><li>
+<a href=#%e5%ae%89%e8%a3%85redis aria-label=安装redis：>安装redis：</a><ul>
+<li>
+<a href=#system-limit-for-number-of-file-watchers-reached aria-label="System limit for number of file watchers reached">System limit for number of file watchers reached</a></li></ul></li><li>
+<a href=#%e5%ae%89%e8%a3%85php%e5%92%8ccomposer aria-label=安装php和composer>安装php和composer</a>
+</li></ul></div></details>
+</div><div class=post-content><blockquote>
+<p>记得进入设置>工作空间行为>锁屏>关闭自动锁屏，不然会卡死在登陆</p><h2 id=分区工具的使用-partitionmanager>分区工具的使用 partitionmanager<a hidden class=anchor aria-hidden=true href=#分区工具的使用-partitionmanager>#</a></h2></blockquote><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>sudo yay -S partitionmanager
+</span></span></code></pre></div><blockquote>
+<h2 id=pacman-的日常使用>pacman 的日常使用<a hidden class=anchor aria-hidden=true href=#pacman-的日常使用>#</a></h2></blockquote><p>安装todesk远程控制</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span><span style=color:#a6e22e>yay</span> <span style=color:#f92672>-</span><span style=color:#a6e22e>Ss</span> <span style=color:#a6e22e>todesk</span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>找到todesk</span>  
+</span></span><span style=display:flex><span><span style=color:#a6e22e>yay</span> <span style=color:#f92672>-</span><span style=color:#a6e22e>S</span> <span style=color:#a6e22e>todesk</span><span style=color:#f92672>-</span><span style=color:#a6e22e>bin</span>
+</span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010>#</span> <span style=color:#a6e22e>需要开启u服务</span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>systemctl</span> <span style=color:#a6e22e>start</span> <span style=color:#a6e22e>todeskd</span>.<span style=color:#a6e22e>service</span> 
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>pacman -S xx1 xx2   <span style=color:#75715e># 安装或升级软件包，或者一列软件包（包含依赖包）</span>
+</span></span><span style=display:flex><span>pacman -Sy          <span style=color:#75715e># 更新软件源</span>
+</span></span><span style=display:flex><span>pacman -Syy         <span style=color:#75715e># 强制更新软件源</span>
+</span></span><span style=display:flex><span>pacman -Su          <span style=color:#75715e># 更新软件包</span>
+</span></span><span style=display:flex><span>pacman -Syu         <span style=color:#75715e># 更新软件源并更新软件包（-Syyu）</span>
+</span></span><span style=display:flex><span>pacman -Sc          <span style=color:#75715e># 清除软件包缓存</span>
+</span></span><span style=display:flex><span>pacman -Ss  xxx     <span style=color:#75715e># 搜索名字含 xxx 的软件</span>
+</span></span><span style=display:flex><span>pacman -Ss ^xxx     <span style=color:#75715e># 搜索名字以 xxx 开头的软件</span>
+</span></span><span style=display:flex><span>pacman -R xxx       <span style=color:#75715e># 删除单个软件包，保留其安装的依赖关系</span>
+</span></span><span style=display:flex><span>pacman -Rs xxx      <span style=color:#75715e># 删除指定软件包，及其没有被其他已安装软件包使用的依赖关系</span>
+</span></span><span style=display:flex><span>pacman -Rn xxx      <span style=color:#75715e># 一并删除全局配置文件</span>
+</span></span><span style=display:flex><span>pacman -Rns xxx     <span style=color:#75715e># 删除一个软件的推荐命令</span>
+</span></span><span style=display:flex><span>pacman -Rns <span style=color:#66d9ef>$(</span>pacman -Qdtq<span style=color:#66d9ef>)</span> <span style=color:#75715e># 删除没有依赖的包</span>
+</span></span><span style=display:flex><span>pacman -Q           <span style=color:#75715e># 查询本地软件包数据库</span>
+</span></span><span style=display:flex><span>pacman -Qq          <span style=color:#75715e># 查询本地软件包数据库，但不显示版本信息</span>
+</span></span><span style=display:flex><span>pacman -Qe          <span style=color:#75715e># 查询非系统自带软件包数据库</span>
+</span></span><span style=display:flex><span>pacman -Q | wc -l   <span style=color:#75715e># 查看有多少本地软件包</span>
+</span></span><span style=display:flex><span>pacman -Qs regex    <span style=color:#75715e># 按正则表达式查询软件包</span>
+</span></span><span style=display:flex><span>pacman -Qdt         <span style=color:#75715e># 查看没有依赖的包</span>
+</span></span></code></pre></div><h2 id=更换源>更换源<a hidden class=anchor aria-hidden=true href=#更换源>#</a></h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>//1.配置镜像源:
+</span></span><span style=display:flex><span>sudo pacman-mirrors -i -c China -m rank
+</span></span><span style=display:flex><span>//2.设置 archlinuxcn 源,
+</span></span><span style=display:flex><span><span style=color:#75715e>#使用方法：在 /etc/pacman.conf 文件末尾添加以下两行：</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#f92672>[</span>archlinuxcn<span style=color:#f92672>]</span>
+</span></span><span style=display:flex><span>Server <span style=color:#f92672>=</span> https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># 之后安装 archlinuxcn-keyring 包导入 GPG key。</span>
+</span></span><span style=display:flex><span>//3.更新源列表
+</span></span><span style=display:flex><span>sudo pacman-mirrors -g
+</span></span><span style=display:flex><span>//4.更新pacman数据库并全面更新系统
+</span></span><span style=display:flex><span>sudo pacman -Syyu
+</span></span><span style=display:flex><span>//5.更新签名
+</span></span><span style=display:flex><span>sudo pacman -S archlinuxcn-keyring
+</span></span><span style=display:flex><span>//6.安装yay,e更换aur的源
+</span></span><span style=display:flex><span>sudo pacman -S yay git net-tools tree vim
+</span></span><span style=display:flex><span>//7.执行以下命令修改 aururl :
+</span></span><span style=display:flex><span>yay --aururl <span style=color:#e6db74>&#34;https://aur.tuna.tsinghua.edu.cn&#34;</span> --save
+</span></span><span style=display:flex><span>//8.修改的配置文件位于 <span style=color:#e6db74>`</span>~/.config/yay/config.json<span style=color:#e6db74>`</span> ，还可通过以下命令查看修改过的配置：
+</span></span><span style=display:flex><span>yay -P -g
+</span></span><span style=display:flex><span>以后就可以直接执行yay -S 你要安装的软件名字，比如
+</span></span><span style=display:flex><span>yay -S netease-cloud-music
+</span></span></code></pre></div><h2 id=更新文件夹语言>更新文件夹语言<a hidden class=anchor aria-hidden=true href=#更新文件夹语言>#</a></h2><pre tabindex=0><code>export LANG=en_US
+xdg-user-dirs-gtk-update  //弹出对话框，问是否改成英文，点是，并且选“不再提示”
+export LANG=zh_CN
+</code></pre><h2 id=安装常用的软件>安装常用的软件：<a hidden class=anchor aria-hidden=true href=#安装常用的软件>#</a></h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>yay -S net-tools base-devel
+</span></span><span style=display:flex><span>浏览器我推荐brave浏览器
+</span></span><span style=display:flex><span>yay -S brave
+</span></span><span style=display:flex><span>chrome浏览器： yay -S google-chrome 
+</span></span><span style=display:flex><span>Microsoft-edge浏览器：yay -S microsoft-edge-dev-bin
+</span></span><span style=display:flex><span>Git软件： yay -S git 
+</span></span><span style=display:flex><span>Uget配合aria2： yay -S aria2 
+</span></span><span style=display:flex><span>下载工具： yay -S uget 
+</span></span><span style=display:flex><span>解压工具： yay -S p7zip file-roller unrar 
+</span></span><span style=display:flex><span>图像编辑器： yay -S gimp （开源版PS）
+</span></span><span style=display:flex><span>WPS办公： yay -S wps-office 
+</span></span><span style=display:flex><span>WPS缺少的字体： yay -S ttf-wps-fonts 
+</span></span><span style=display:flex><span>WPS安装中文： sudo pacman -S wps-office-mui-zh-cn 
+</span></span><span style=display:flex><span>Vscode开发工具： yay -S visual-studio-code-bin 
+</span></span><span style=display:flex><span>Markdown编辑器： yay -S typora 
+</span></span><span style=display:flex><span>强大的Web内容（视频，音频，图片）下载工具：  yay -S you-get 
+</span></span><span style=display:flex><span>火焰截图： yay -S flameshot  <span style=color:#f92672>(</span>超好用,系统设置里面添加快捷键即可<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>云笔记软件： yay -S joplin <span style=color:#f92672>(</span>开源免费，云服务需要飞天服务<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>chm文件阅读器： yay -S kchmviewer 
+</span></span><span style=display:flex><span>有道词典： yay -S youdao-dict 
+</span></span><span style=display:flex><span>开源电子书阅读器： yay -S calibre 
+</span></span><span style=display:flex><span>MD文件编辑器： yay -S typora 
+</span></span><span style=display:flex><span>Gif录制软件： yay -S peek 
+</span></span><span style=display:flex><span>sudo pacman -S filezilla
+</span></span><span style=display:flex><span><span style=color:#75715e># 关闭电子钱包</span>
+</span></span><span style=display:flex><span>用了kde以后，每次打开浏览器都会跳出电子钱包什么的，十分烦人，也可能是我自己不习惯
+</span></span><span style=display:flex><span>于是就想办法把他关掉！
+</span></span><span style=display:flex><span>搜索Kwallet， 不是KwalletManager
+</span></span><span style=display:flex><span>然后把启用的勾勾去掉就好啦
+</span></span></code></pre></div><h2 id=安装docker>安装docker：<a hidden class=anchor aria-hidden=true href=#安装docker>#</a></h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>sudo pacman -S docker
+</span></span><span style=display:flex><span>sudo pacman -S docker-compose
+</span></span></code></pre></div><h2 id=安装java>安装java：<a hidden class=anchor aria-hidden=true href=#安装java>#</a></h2><p>（<a href=https://wiki.archlinux.org/index.php/Java#Installation>https://wiki.archlinux.org/index.php/Java#Installation</a>）</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>
+</span></span><span style=display:flex><span>sudo pacman -S java-runtime-common java-environment-common
+</span></span><span style=display:flex><span>yay jdk8  <span style=color:#75715e># Select extra/jdk8-openjdk</span>
+</span></span><span style=display:flex><span>使用 archlinux-java 命令来管理 Java 环境。
+</span></span><span style=display:flex><span>列举 Java 环境：
+</span></span><span style=display:flex><span>archlinux-java status
+</span></span><span style=display:flex><span>选择 Java 环境：
+</span></span><span style=display:flex><span>sudo archlinux-java set java-8-openjdk
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>打开.bashrc
+</span></span><span style=display:flex><span><span style=color:#75715e># 在后面加上， 地址根据你jdk修改</span>
+</span></span><span style=display:flex><span>export JAVA_HOME<span style=color:#f92672>=</span>/home/hxy/java/jdk-13
+</span></span><span style=display:flex><span>export JRE_HOME<span style=color:#f92672>=</span><span style=color:#e6db74>${</span>JAVA_HOME<span style=color:#e6db74>}</span>/jre
+</span></span><span style=display:flex><span>export CLASSPATH<span style=color:#f92672>=</span>.:<span style=color:#e6db74>${</span>JAVA_HOME<span style=color:#e6db74>}</span>/lib:<span style=color:#e6db74>${</span>JRE_HOME<span style=color:#e6db74>}</span>/lib
+</span></span><span style=display:flex><span>export PATH<span style=color:#f92672>=</span><span style=color:#e6db74>${</span>JAVA_HOME<span style=color:#e6db74>}</span>/bin:$PATH
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># 启用配置，不过我这边不知道怎么退出（我是强制关掉）</span>
+</span></span><span style=display:flex><span>source  .bashrc
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># 查看是否配置成功</span>
+</span></span><span style=display:flex><span>java -version
+</span></span></code></pre></div><h2 id=安装nodenvmyarn>安装node,nvm，yarn：<a hidden class=anchor aria-hidden=true href=#安装nodenvmyarn>#</a></h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>先配置下载github太慢
+</span></span><span style=display:flex><span> kate /etc/hosts
+</span></span><span style=display:flex><span>在最后添加 
+</span></span><span style=display:flex><span>199.232.68.133  raw.githubusercontent.com
+</span></span><span style=display:flex><span><span style=color:#75715e># 1.下载nvm脚本文件</span>
+</span></span><span style=display:flex><span>curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.36.0/install.sh | bash
+</span></span><span style=display:flex><span><span style=color:#75715e># 2. 或者：</span>
+</span></span><span style=display:flex><span>export NVM_NODEJS_ORG_MIRROR<span style=color:#f92672>=</span>https://npm.taobao.org/mirrors/node
+</span></span><span style=display:flex><span><span style=color:#75715e># 注：如果只是在终端输入了上面的代码只能在本次窗口没有关闭的时候生效，下次打开还是会还原成默认的源</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># 如果需要长久的使用淘宝源则需要如下操作</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># 确认你的sh是什么，一般bash或者zsh</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># 如果是 bash 则键入 </span>
+</span></span><span style=display:flex><span>echo <span style=color:#e6db74>&#34;export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node&#34;</span> &gt;&gt; ~/.bash_profile
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># 如果是 zsh 则输入 </span>
+</span></span><span style=display:flex><span>echo <span style=color:#e6db74>&#34;export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node&#34;</span> &gt;&gt; ~/.zshrc
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># 最后再分别执行命令</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># bash 为 ：source ~/.bash_profile</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># zsh 为 ：source ~/.zshrc</span>
+</span></span><span style=display:flex><span>等同于
+</span></span><span style=display:flex><span>在.bashrc中添加下面的内容
+</span></span><span style=display:flex><span>export NVM_NODEJS_ORG_MIRROR<span style=color:#f92672>=</span>http://npm.taobao.org/mirrors/node
+</span></span><span style=display:flex><span>3.下载node,配置国内镜像
+</span></span><span style=display:flex><span>nvm install node
+</span></span><span style=display:flex><span>设置npm国内镜像
+</span></span><span style=display:flex><span>npm config set registry https://registry.npm.taobao.org
+</span></span><span style=display:flex><span>安装镜像服务
+</span></span><span style=display:flex><span>npm i -g mirror-config-china
+</span></span><span style=display:flex><span>npm i -g yarn
+</span></span><span style=display:flex><span>设置yarn镜像（可以做成一个a.sh脚本执行）
+</span></span><span style=display:flex><span>yarn config set registry https://registry.npm.taobao.org -g
+</span></span><span style=display:flex><span>yarn config set disturl https://npm.taobao.org/dist -g
+</span></span><span style=display:flex><span>yarn config set electron_mirror https://npm.taobao.org/mirrors/electron/ -g
+</span></span><span style=display:flex><span>yarn config set sass_binary_site https://npm.taobao.org/mirrors/node-sass/ -g
+</span></span><span style=display:flex><span>yarn config set phantomjs_cdnurl https://npm.taobao.org/mirrors/phantomjs/ -g
+</span></span><span style=display:flex><span>yarn config set chromedriver_cdnurl https://cdn.npm.taobao.org/dist/chromedriver -g
+</span></span><span style=display:flex><span>yarn config set operadriver_cdnurl https://cdn.npm.taobao.org/dist/operadriver -g
+</span></span><span style=display:flex><span>yarn config set fse_binary_host_mirror https://npm.taobao.org/mirrors/fsevents -g
+</span></span></code></pre></div><h2 id=安装miniconda>安装miniconda：<a hidden class=anchor aria-hidden=true href=#安装miniconda>#</a></h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>从清华镜像下载miniconda执行的sh
+</span></span><span style=display:flex><span> https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/ 
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span> 配置conda国内镜像
+</span></span><span style=display:flex><span> i在.condarc中加入下面的：
+</span></span><span style=display:flex><span> channels:
+</span></span><span style=display:flex><span>  - defaults
+</span></span><span style=display:flex><span>show_channel_urls: true
+</span></span><span style=display:flex><span>channel_alias: https://mirrors.tuna.tsinghua.edu.cn/anaconda
+</span></span><span style=display:flex><span>default_channels:
+</span></span><span style=display:flex><span>  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main
+</span></span><span style=display:flex><span>  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free
+</span></span><span style=display:flex><span>  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r
+</span></span><span style=display:flex><span>  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/pro
+</span></span><span style=display:flex><span>  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/msys2
+</span></span><span style=display:flex><span>custom_channels:
+</span></span><span style=display:flex><span>  conda-forge: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
+</span></span><span style=display:flex><span>  msys2: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
+</span></span><span style=display:flex><span>  bioconda: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
+</span></span><span style=display:flex><span>  menpo: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
+</span></span><span style=display:flex><span>  pytorch: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
+</span></span><span style=display:flex><span>  simpleitk: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
+</span></span></code></pre></div><p> 安装Anaconda后终端出现的(base)字样去除方法：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>conda config --set auto_activate_base False
+</span></span></code></pre></div><h2 id=安装输入法>安装输入法：<a hidden class=anchor aria-hidden=true href=#安装输入法>#</a></h2><p>设置小键盘开机自动启动方法
+打开设置 找到输入设备->键盘 -> plasma启动时numlock状态->开启即可
+关闭触控板也是输入设备->触摸板</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>下载fcitx5并安装
+</span></span><span style=display:flex><span>sudo yay -S fcitx5 fcitx5-chinese-addons  fcitx5-rime fcitx5-chewing  fcitx5-configtool
+</span></span><span style=display:flex><span>1、在用户文件夹下创建.xprofile配置文件
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>输入命令
+</span></span><span style=display:flex><span>sudo vim ~/.xprofile 
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>然后插入如下内容
+</span></span><span style=display:flex><span>export GTK_IM_MODULE<span style=color:#f92672>=</span>fcitx5
+</span></span><span style=display:flex><span>export QT_IM_MODULE<span style=color:#f92672>=</span>fcitx5
+</span></span><span style=display:flex><span>export XMODIFIERS<span style=color:#f92672>=</span>@im<span style=color:#f92672>=</span>fcitx
+</span></span><span style=display:flex><span>2、设置fcitx5为开机启动
+</span></span><span style=display:flex><span>①: 直接在~/.xprofile中插入下面这行
+</span></span><span style=display:flex><span>fcitx5 &amp;
+</span></span><span style=display:flex><span>②: 如果是KDE用户，可在系统设置-启动和关闭-自启动中填加fcitx5为开机自启动项
+</span></span><span style=display:flex><span>编辑~<span style=color:#e6db74>`</span>/.pam_environment<span style=color:#e6db74>`</span>
+</span></span><span style=display:flex><span>INPUT_METHOD  DEFAULT<span style=color:#f92672>=</span>fcitx5
+</span></span><span style=display:flex><span>GTK_IM_MODULE DEFAULT<span style=color:#f92672>=</span>fcitx5
+</span></span><span style=display:flex><span>QT_IM_MODULE  DEFAULT<span style=color:#f92672>=</span>fcitx5
+</span></span><span style=display:flex><span>XMODIFIERS    DEFAULT<span style=color:#f92672>=</span><span style=color:#ae81ff>\@</span>im<span style=color:#f92672>=</span>fcitx5
+</span></span></code></pre></div><h2 id=安装golang>安装golang:<a hidden class=anchor aria-hidden=true href=#安装golang>#</a></h2><h3 id=1使用pacmanyay>1.使用pacman/yay<a hidden class=anchor aria-hidden=true href=#1使用pacmanyay>#</a></h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>sudo pacman -S go go-tools
+</span></span></code></pre></div><blockquote>
+<p>可选用 <code>gcc-go</code> ，但若需要使用 JetBrains 的 IDE 则必须使用 <code>go</code> ，否则 IDE 无法在 <code>/usr/lib/go</code> 下找到 Go SDK。</p></blockquote><h3 id=2从官网下载>2.从官网下载<a hidden class=anchor aria-hidden=true href=#2从官网下载>#</a></h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>在golang官网下载go的安装包，go1.16.linux-amd64.tar.gz 然后
+</span></span><span style=display:flex><span><span style=color:#75715e># 1.解压到local目录</span>
+</span></span><span style=display:flex><span>wget  https://golang.google.cn/dl/go1.16.4.linux-amd64.tar.gz
+</span></span><span style=display:flex><span>sudo tar -C /opt -xzf go1.16.4.linux-amd64.tar.gz
+</span></span><span style=display:flex><span><span style=color:#75715e># 2.编辑环境变量，在/etc/profile和.bashrc添加</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#vim ~/.zshrc  # OR ~/.bashrc OR ~/.profile</span>
+</span></span><span style=display:flex><span>cp -r ~/.bashrc ~/bashrcbak
+</span></span><span style=display:flex><span><span style=color:#75715e># 添加a环境变量</span>
+</span></span><span style=display:flex><span>export GOMODPATH<span style=color:#f92672>=</span>/opt/go
+</span></span><span style=display:flex><span>export PATH<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;</span>$GOMODPATH<span style=color:#e6db74>/bin:</span>$GOMODPATH<span style=color:#e6db74>/golangmod/bin:</span>$PATH<span style=color:#e6db74>&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># 修改/opt的权限</span>
+</span></span><span style=display:flex><span>sudo chmod -R <span style=color:#ae81ff>777</span> /opt/go
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>echo <span style=color:#e6db74>&#39;export GOMODPATH=/opt/go
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>export PATH=&#34;$GOMODPATH/bin:$GOMODPATH/golangmod/bin:$PATH&#34;&#39;</span> &gt;&gt;~/.bashrc
+</span></span><span style=display:flex><span>source ~/.bashrc
+</span></span><span style=display:flex><span><span style=color:#75715e># 3.输入go version检查是否有安装成功</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># 4.配置go代理</span>
+</span></span><span style=display:flex><span>go env -w GO111MODULE<span style=color:#f92672>=</span>on
+</span></span><span style=display:flex><span>go env -w GOPROXY<span style=color:#f92672>=</span>https://goproxy.cn,direct
+</span></span><span style=display:flex><span>go env -w GOPATH<span style=color:#f92672>=</span>/opt/go/golangmod
+</span></span></code></pre></div><h2 id=安装teamviewer>安装teamviewer<a hidden class=anchor aria-hidden=true href=#安装teamviewer>#</a></h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>yay -S teamviewer
+</span></span><span style=display:flex><span>提示：TeamViewer Daemon is not running，解决方法：
+</span></span><span style=display:flex><span>sudo teamviewer --daemon enable
+</span></span></code></pre></div><h2 id=安装myql已经被替换为mariadb请使用下面的方法>安装myql：（已经被替换为mariadb,请使用下面的方法）<a hidden class=anchor aria-hidden=true href=#安装myql已经被替换为mariadb请使用下面的方法>#</a></h2><p>如果要使用mysql8,需要设置aur！！！！！！！</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>//下载Mysql
+</span></span><span style=display:flex><span>pacman -S mysql
+</span></span><span style=display:flex><span>//初始化Mysql，记住生成的密码，方便修改
+</span></span><span style=display:flex><span>sudo mysqld --initialize --user<span style=color:#f92672>=</span>mysql --basedir<span style=color:#f92672>=</span>/usr --datadir<span style=color:#f92672>=</span>/var/lib/mysql
+</span></span><span style=display:flex><span>//设置开机启动
+</span></span><span style=display:flex><span>systemctl enable mysqld.service
+</span></span><span style=display:flex><span>//启动Mysql
+</span></span><span style=display:flex><span>sudo systemctl start mysqld.service
+</span></span><span style=display:flex><span>//修改密码
+</span></span><span style=display:flex><span>mysql -u root -p
+</span></span><span style=display:flex><span>mysql&gt; ALTER USER <span style=color:#e6db74>&#39;root&#39;</span>@<span style=color:#e6db74>&#39;localhost&#39;</span> IDENTIFIED BY <span style=color:#e6db74>&#39;新密码&#39;</span>;
+</span></span></code></pre></div><p>如果忘记密码，直接百度mysql8忘记密码怎么办</p><h3 id=manjaro-忘记密码解决办法>manjaro 。忘记密码解决办法：<a hidden class=anchor aria-hidden=true href=#manjaro-忘记密码解决办法>#</a></h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#75715e># 1.先编辑mysql配置文件</span>
+</span></span><span style=display:flex><span>kate /etc/mysql/my.cnf
+</span></span><span style=display:flex><span><span style=color:#75715e># 2.添加一个     skip-grant-tables</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># 3.  重启mysql服务</span>
+</span></span><span style=display:flex><span>sudo systemctl restart mysqld
+</span></span><span style=display:flex><span><span style=color:#75715e># 4.进入mysql 直接在命令行进入lmysql</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># 5 设置 root密码为空</span>
+</span></span><span style=display:flex><span>mysql&gt;use mysql;  
+</span></span><span style=display:flex><span>mysql&gt;update user set authentication_string<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;&#39;</span> where user<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;root&#39;</span>;   <span style=color:#75715e>#将密码置空 </span>
+</span></span><span style=display:flex><span>mysql&gt;exit
+</span></span><span style=display:flex><span><span style=color:#75715e>#6 去掉mysql配置文件里的     skip-grant-tables 重新登陆mysql使用</span>
+</span></span><span style=display:flex><span>mysql -uroot -p  <span style=color:#75715e>#两次确定就可进去</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#7. ALTER USER &#39;root&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;新密码&#39;;# 然后退出mysql登陆就可以了</span>
+</span></span></code></pre></div><h2 id=如果出现>如果出现<a hidden class=anchor aria-hidden=true href=#如果出现>#</a></h2><pre tabindex=0><code>ER_NOT_SUPPORTED_AUTH_MODE: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+</code></pre><p>命令行进入mysql输入</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>ALTER USER <span style=color:#e6db74>&#39;root&#39;</span>@<span style=color:#e6db74>&#39;localhost&#39;</span> IDENTIFIED WITH mysql_native_password BY <span style=color:#e6db74>&#39;123456&#39;</span>
+</span></span></code></pre></div><p>就可以连上了</p><h2 id=安装mariadb>安装mariadb<a hidden class=anchor aria-hidden=true href=#安装mariadb>#</a></h2><p>##1. 安装 与Ubuntu不同，arch默认已经不再支持MySQL，但是可以安装MariaDB，其比MySQL的性能更好且操作基本相同。 输入下面命令安装：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>systemctl stop mysqld    //停止mysql服务
+</span></span><span style=display:flex><span>sudo pacman -S mariadb libmariadbclient mariadb-clients    //安装mariadb
+</span></span><span style=display:flex><span>sudo mysql_install_db --user<span style=color:#f92672>=</span>mysql --basedir<span style=color:#f92672>=</span>/usr --datadir<span style=color:#f92672>=</span>/var/lib/mysql
+</span></span><span style=display:flex><span>复制代码
+</span></span></code></pre></div><p>##2. 启动</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>systemctl start mariadb
+</span></span><span style=display:flex><span>mysql_secure_installation    //设置密码等管理操作
+</span></span><span style=display:flex><span>systemctl restart mariadb
+</span></span><span style=display:flex><span>复制代码
+</span></span></code></pre></div><p>登录：</p><pre tabindex=0><code>mysql -u root -p
+</code></pre><h2 id=安装postgressql>安装postgressql<a hidden class=anchor aria-hidden=true href=#安装postgressql>#</a></h2><p>安装：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>sudo pacman -S  postgresql
+</span></span></code></pre></div><p>初始化(必须)：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-swift data-lang=swift><span style=display:flex><span>sudo su <span style=color:#f92672>-</span> postgres <span style=color:#f92672>-</span>c <span style=color:#e6db74>&#34;initdb --locale zh_CN.UTF-8 -E UTF8 -D &#39;/var/lib/postgres/data&#39;&#34;</span>
+</span></span></code></pre></div><p>其中，我将原本的en_US改为了zh_CN，未见异常。想要撤销的话，只需要把<code>'/var/lib/postgres/data'</code>下面的内容清空。
+启动/开机启动 PostgreSQL：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-css data-lang=css><span style=display:flex><span><span style=color:#f92672>systemctl</span> <span style=color:#f92672>start</span> <span style=color:#f92672>postgresql</span>.<span style=color:#a6e22e>service</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>systemctl</span> <span style=color:#f92672>enable</span> <span style=color:#f92672>postgresql</span>.<span style=color:#a6e22e>service</span>
+</span></span></code></pre></div><p>切换到postgres用户，然后登录（初始无密码）：</p><pre tabindex=0><code class=language-undefined data-lang=undefined>sudo -i -u postgres
+psql
+</code></pre><p>要退出psql或返回原用户，都是用<code>exit</code>命令。
+PostgreSQL的用户跟系统用户有些关联，前者必须也是后者。在初始化过程中会在系统中创建postgres用户，同时也是数据库的超级权限用户，postgres用户可以创建其他数据库用户。</p><blockquote>
+<p>提示： 如果创建一个与你的系统用户同名的数据库用户，并允许其访问 PostgreSQL 数据库，那么在登录PostgreSQL 数据库 shell 的时候无需切换用户（这样做会比较方便）。</p></blockquote><h3 id=通用基本操作1fn1>通用基本操作<a href=#fn1>[1]</a><a hidden class=anchor aria-hidden=true href=#通用基本操作1fn1>#</a></h3><h4 id=数据库shell外>数据库shell外<a hidden class=anchor aria-hidden=true href=#数据库shell外>#</a></h4><p>添加数据库（须在原用户操作）：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>createdb myDatabaseName
+</span></span></code></pre></div><p>连接数据库shell（须用postgres用户，所以先切一下用户）：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>sudo -i -u postgres
+</span></span><span style=display:flex><span>psql -d myDatabaseName
+</span></span></code></pre></div><p>也可以一步进入postgres用户的myDatabaseName数据库，与上面效果一样：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>psql -U postgres -d myDatabaseName
+</span></span></code></pre></div><p>若要创建用户，要在数据库程序外，用postgres用户执行：</p><pre tabindex=0><code class=language-undefined data-lang=undefined>createuser --interactive myUserName
+</code></pre><h4 id=数据库shell内>数据库shell内<a hidden class=anchor aria-hidden=true href=#数据库shell内>#</a></h4><p>注意：数据库内的SQL语句，建议大写，必须分号结尾。
+进入数据库后可修改密码：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-dart data-lang=dart><span style=display:flex><span>alter user postgres <span style=color:#66d9ef>with</span> password <span style=color:#e6db74>&#39; *** 密码 *** &#39;</span>;
+</span></span></code></pre></div><p>如果有其他用户，可以把postgres换成其他用户的名。
+一些常用的命令：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#ae81ff>\c</span> myDatabaseName     <span style=color:#75715e># 连接到数据库myDatabaseName</span>
+</span></span><span style=display:flex><span><span style=color:#ae81ff>\d</span>u    <span style=color:#75715e># 列出所有用户以及他们的权限</span>
+</span></span><span style=display:flex><span><span style=color:#ae81ff>\d</span>t    <span style=color:#75715e># 展示当前数据库中所有的表相关的汇总信息</span>
+</span></span><span style=display:flex><span><span style=color:#ae81ff>\q</span>    <span style=color:#75715e># 退出psql</span>
+</span></span></code></pre></div><h2 id=开启ssh服务>开启ssh服务<a hidden class=anchor aria-hidden=true href=#开启ssh服务>#</a></h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>systemctl enable sshd.service 开机启动
+</span></span><span style=display:flex><span>systemctl start sshd.service 立即启动
+</span></span><span style=display:flex><span>systemctl restart sshd.service 立即重启
+</span></span></code></pre></div><h2 id=安装nginx>安装nginx：<a hidden class=anchor aria-hidden=true href=#安装nginx>#</a></h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>yay -S nginx-mainline
+</span></span></code></pre></div><h2 id=安装redis>安装redis：<a hidden class=anchor aria-hidden=true href=#安装redis>#</a></h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>yay -S redis
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#ae81ff>1</span> 启动服务端
+</span></span><span style=display:flex><span>sudo redis-server
+</span></span><span style=display:flex><span>启动redis
+</span></span><span style=display:flex><span><span style=color:#ae81ff>2</span> 启动客户端
+</span></span><span style=display:flex><span>sudo redis-cli
+</span></span><span style=display:flex><span>systemctl redis start
+</span></span><span style=display:flex><span><span style=color:#75715e># 关闭redis</span>
+</span></span><span style=display:flex><span>systemctl redis stop
+</span></span><span style=display:flex><span><span style=color:#75715e># 开机自启动</span>
+</span></span><span style=display:flex><span>systemctl enable redis
+</span></span></code></pre></div><p>配置redis密码：在<code>/etc/redis.conf</code>中找到requirepass,去掉h注释并更换为自己的密码；
+出现</p><h3 id=system-limit-for-number-of-file-watchers-reached>System limit for number of file watchers reached<a hidden class=anchor aria-hidden=true href=#system-limit-for-number-of-file-watchers-reached>#</a></h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>echo fs.inotify.max_user_watches <span style=color:#f92672>=</span> <span style=color:#ae81ff>524288</span> | sudo tee -a /etc/sysctl.conf 
+</span></span><span style=display:flex><span>sudo sysctl -p
+</span></span></code></pre></div><h2 id=安装php和composer>安装php和composer<a hidden class=anchor aria-hidden=true href=#安装php和composer>#</a></h2><p>安装php：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>yay -S php
+</span></span></code></pre></div><p>第一步，下载composer。（切换到项目的根目录，再执行）</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>php -r <span style=color:#e6db74>&#34;readfile(&#39;https://getcomposer.org/installer&#39;);&#34;</span> | php
+</span></span></code></pre></div><p>下载之后后自动安装，执行 php composer.phar。查看composer是否安装成功。
+第二步，将composer.phar文件移动到bin目录以便全局使用composer命令</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>cp -r composer.phar /usr/local/bin/composer
+</span></span></code></pre></div><p>（如果只是针对某个项目使用composer,可忽略此步）
+第三步，切换国内源（如果第一步下载成功，可忽略此步）</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>composer config -g repo.packagist composer https://packagist.phpcomposer.com
+</span></span></code></pre></div><p>第四步，安装phpcgi</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>yay -S php-apache php-cgi php-fpm php-gd  php-embed php-intl php-imap  php-redis php-snmp
+</span></span></code></pre></div><p>第五步，安装pecl</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>wget http://pear.php.net/go-pear.phar
+</span></span><span style=display:flex><span>php go-pear.phar
+</span></span></code></pre></div><p>第六步，安装xdebug</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>sudo pecl install xdebug
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>//为php.ini 添加 extension<span style=color:#f92672>=</span>xdebug.so
+</span></span><span style=display:flex><span>sudo vim /etc/php/php.ini
+</span></span><span style=display:flex><span>sudo systemctl reload php-fpm
+</span></span></code></pre></div></div><footer class=post-footer>
+<ul class=post-tags>
+<li><a href=https://yzqtpl.github.io/hugo-blog/tags/%E7%94%9F%E6%B4%BB/>生活</a></li></ul><nav class=paginav>
+<a class=next href=https://yzqtpl.github.io/hugo-blog/post/%E7%94%9F%E6%B4%BB/>
+<span class=title>下一页 »</span>
+<br>
+<span>生活</span>
+</a>
+</nav></footer></article></main><footer class=footer>
+<span>&copy; 2022 <a href=https://yzqtpl.github.io/hugo-blog>PaperModL</a></span>
+<span>
+Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://git.io/hugopapermod rel=noopener target=_blank>PaperMod</a>
+</span>
+</footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
+</a>
+<script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(t){t.preventDefault();var e=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(e)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(e)}']`).scrollIntoView({behavior:"smooth"}),e==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${e}`)})})</script>
+<script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script>
+<script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script>
+<script>document.querySelectorAll("pre > code").forEach(t=>{const n=t.parentNode.parentNode,e=document.createElement("button");e.classList.add("copy-code"),e.innerText="复制";function s(){e.innerText="已复制！",setTimeout(()=>{e.innerText="复制"},2e3)}e.addEventListener("click",o=>{if("clipboard"in navigator){navigator.clipboard.writeText(t.textContent),s();return}const e=document.createRange();e.selectNodeContents(t);const n=window.getSelection();n.removeAllRanges(),n.addRange(e);try{document.execCommand("copy"),s()}catch(e){}n.removeRange(e)}),n.classList.contains("highlight")?n.appendChild(e):n.parentNode.firstChild==n||(t.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName=="TABLE"?t.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(e):t.parentNode.appendChild(e))})</script>
+</body></html>

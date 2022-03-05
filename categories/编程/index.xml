@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>编程 on PaperModL</title>
+    <link>https://yzqtpl.github.io/hugo-blog/categories/%E7%BC%96%E7%A8%8B/</link>
+    <description>Recent content in 编程 on PaperModL</description>
+    <image>
+      <url>https://yzqtpl.github.io/hugo-blog/papermod-cover.png</url>
+      <link>https://yzqtpl.github.io/hugo-blog/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 11 May 2017 09:17:00 +0000</lastBuildDate><atom:link href="https://yzqtpl.github.io/hugo-blog/categories/%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JavaScript 优雅的实现方式包含你可能不知道的知识点</title>
+      <link>https://yzqtpl.github.io/hugo-blog/post/javascript-%E4%BC%98%E9%9B%85%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F%E5%8C%85%E5%90%AB%E4%BD%A0%E5%8F%AF%E8%83%BD%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84%E7%9F%A5%E8%AF%86%E7%82%B9-/</link>
+      <pubDate>Thu, 11 May 2017 09:17:00 +0000</pubDate>
+      
+      <guid>https://yzqtpl.github.io/hugo-blog/post/javascript-%E4%BC%98%E9%9B%85%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F%E5%8C%85%E5%90%AB%E4%BD%A0%E5%8F%AF%E8%83%BD%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84%E7%9F%A5%E8%AF%86%E7%82%B9-/</guid>
+      <description>前端 标签： 干货
+JavaScript 优雅的实现方式包含你可能不知道的知识点 有些东西很好用，但是你未必知道；有些东西你可能用过，但是你未必知道原理。
+实现一个目的有多种途径，俗话说，条条大路通罗马。很多内容来自平时的一些收集以及过往博客文章底下的精彩评论，收集整理拓展一波，发散一下大家的思维以及拓展一下知识面。
+茴字有四种写法，233333&amp;hellip;， 文末有彩蛋有惊喜。
+1、简短优雅地实现 sleep 函数 很多语言都有 sleep 函数，显然 js 没有，那么如何能简短优雅地实现这个方法？
+1.1 普通版 function sleep(sleepTime) { 	for(var start = +new Dat e; +new Date - start &amp;lt;= sleepTime;) {} } var t1 = +new Date() sleep(3000) var t2 = +new Date() console.log(t2 - t1) 优点：简单粗暴，通俗易懂。 缺点：这是最简单粗暴的实现，确实 sleep 了，也确实卡死了，CPU 会飙升，无论你的服务器 CPU 有多么 Niubility。
+1.2 Promise 版本 function sleep(time) {  return new Promise(resolve =&amp;gt; setTimeout(resolve, time)) }  const t1 = +new Date() sleep(3000).</description>
+    </item>
+    
+  </channel>
+</rss>
